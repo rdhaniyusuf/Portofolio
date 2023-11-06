@@ -1,0 +1,106 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2rem 7%;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	z-index: 100;
+	justify-content: space-between;
+	max-width: 100%;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.header.sticky {
+	background: var(--main-color);
+	box-shadow: 0 .1rem 1rem var(--shadow-color);
+	transition: .1s ease;
+}
+
+.header .logo {
+	font-size: 2.5rem;
+	color: var(--white-color);
+	font-weight: 600;
+	cursor: default;
+	margin-right: auto;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.header .navbar {
+	display: flex;
+	flex: 0 0 auto;
+	flex-wrap: wrap;
+}
+
+.header .navbar a {
+	position: relative;
+	float: left;
+	font-size: 1.8rem;
+	color: var(--white-color);
+	font-weight: 500;
+	margin-right: 2.3rem;
+}
+
+.header .navbar a.active::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: .2rem;
+	background-color: var(--white-color);
+	bottom: -6px;
+}
+
+.menu-icon {
+	font-size: 2.4rem;
+	display: none;
+	color: var(--white-color);
+	margin-right: 1.2rem;
+	cursor: pointer;
+
+}
+
+.darkMode-icon {
+	font-size: 2rem;
+	color: var(--white-color);
+	cursor: pointer;
+	justify-content: center;
+
+}
+
+
+@media (max-width:576px) {
+	.header .navbar {
+		flex-shrink: 0;
+		display: none;
+		flex-wrap: wrap;
+		margin-left: 0%;
+		max-height: 100%;
+		margin-left: 0;
+		width: 20%;
+	}
+
+	.header .navbar a {
+		/* position: relative; */
+		/* display: flex; */
+		flex :content;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+	}
+
+	.menu-icon {
+		display: block;
+	}
+
+	.header .navbar a.active::before {
+		max-height: 50%;
+	}
+}

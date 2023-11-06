@@ -1,0 +1,108 @@
+.about {
+	position: relative;
+	align-items: center;
+	text-align: justify;
+	size: 100vh;
+}
+
+
+.about .about-content {
+	max-width: 100%;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding: 2rem;
+
+}
+
+.about-content .ab-ct-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ab-ct-row .ab-ct-top {
+	flex: 0 0 auto;
+	width: 100%;
+	margin-bottom: .2rem;
+	text-align: center;
+}
+
+.ab-ct-top img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40vh;
+
+}
+
+.ab-ct-left h3 {
+	font-size: 2.5rem;
+	color: var(--text-color);
+	font-weight: 600;
+
+}
+.ab-ct-left p{
+	font-size: 1.4rem;
+	color: var(--text-color);
+	font-weight: 600;
+	margin-right: 2rem;
+}
+
+.ab-ct-row .ab-ct-left {
+	flex: 0 0 auto;
+	width: 50%;
+
+}
+
+.ab-ct-row .ab-ct-right {
+	flex: 0 0 auto;
+	width: 50%;
+}
+
+.ab-ct-right ul {
+	list-style: none;
+	font-size: 1.4rem;
+	color: var(--text-color);
+	font-weight: 550;
+}
+
+.ab-ct-right h3 {
+	font-size: 2.5rem;
+	color: var(--text-color);
+	font-weight: 600;
+}
+
+@media (max-width:576px) {
+	.ab-ct-row {
+		flex-shrink: 0;
+		width: 100%;
+		max-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.ab-ct-row .ab-ct-top {
+		flex: 1 0 auto;
+		width: 100%;
+	}
+
+	.ab-ct-top img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 20vh;
+
+	}
+
+	.ab-ct-row .ab-ct-left {
+		flex: 1 0 auto;
+		width: 100%;
+		margin: none;
+	}
+
+	.ab-ct-row .ab-ct-right {
+		flex: 1 0 auto;
+		width: 100%;
+		margin: none;
+	}
+
+}
