@@ -1,28 +1,28 @@
-$('.portfolio-button').mousedown(function () {
-    timeout = setInterval(function () {
-        window.scrollBy(0, -1); // May need to be -1 to go down
-    }, 0); // Play around with this number. May go too fast
+// Sticky Navbar
 
-    return false;
-});
+window.onscroll = () => {
+	let header = document.querySelector('.header');
+	header.classList.toggle('sticky', window.scrollY > 120);
+};
 
-$(document).ready(function () {
-    $('.toggle').click(function () {
-        $('.menu').toggleClass('active');
-    });
-});
+function responsiveNavBar() {
+	var x = document.getElementById("navbar");
+	if (x.className === "navbar") {
+		x.className += " responsive";
+	} else {
+		x.className = "navbar";
+	}
+}
 
-var btn = $('#button');
+document.addEventListener('DOMContentLoaded', function () {
+	const menuIcon = document.querySelector('.menu-icon');
+	const navbar = document.getElementById('navbar');
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
+	menuIcon.addEventListener('click', function () {
+		if (navbar.style.display === 'block') {
+			navbar.style.display = 'none';
+		} else {
+			navbar.style.display = 'block';
+		}
+	});
 });
