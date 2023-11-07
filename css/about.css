@@ -71,7 +71,7 @@
 	font-weight: 600;
 }
 
-@media (max-width:576px) {
+@media (max-width:768px) {
 	.ab-ct-row {
 		flex-shrink: 0;
 		width: 100%;
