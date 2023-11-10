@@ -4,303 +4,147 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>rdhaniy__</title>
-
-	<!-- Font Awesome -->
+	<title>Portfolio</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/header.css">
+	<link rel="stylesheet" href="assets/css/home.css">
+	<link rel="stylesheet" href="assets/css/about.css">
+	<link rel="stylesheet" href="assets/css/portfolio.css">
 
-	<!-- fork awesome -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
-		integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-	<!-- custom css -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/home.css">
-	<link rel="stylesheet" href="css/about.css">
-	<link rel="stylesheet" href="css/skill.css">
-	<link rel="stylesheet" href="css/project.css">
-	<link rel="stylesheet" href="css/experience.css">
-	<link rel="stylesheet" href="css/contact.css">
-
+	<link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
-	<!-- header -->
-	<header class="header sticky">
-		<a href="#" class="logo">Rdhaniy_</a>
-		<nav class="navbar" id="navbar">
-			<a href="#home">Home</a>
-			<a href="#about">About</a>
-			<a href="#skill">Skill</a>
-			<a href="#project">Project</a>
-			<a href="#experience">Experience</a>
-			<a href="#contact">Contact</a>
+	<!-- Header -->
+	<header class="header">
+		<div class="nav-logo">rdhaniy_</div>
+		<div class="nav-toggle"><a href=""><i class="fa-solid fa-bars-staggered"></i></div>
+		<nav>
+			<div class="nav-navbar">
+				<ul class="navbar-list">
+					<li class="navbar-item"><a href="#home">Home</a></li>
+					<li class="navbar-item"><a href="#about">About</a></li>
+					<li class="navbar-item"><a href="#portfolio">Portfolio</a></li>
+					<li class="navbar-item"><a href="#skill">Skill</a></li>
+					<li class="navbar-item"><a href="#exp">Exp</a></li>
+					<li class="navbar-item"><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
 		</nav>
-		<div class="menu-icon">
-			<i class="fas fa-bars"></i>
-		</div>
-		<div class="darkMode-icon">
-			<i class="fa fa-moon" aria-hidden="true"></i>
-		</div>
+
 	</header>
-	<!-- Home Section -->
-	<section class="home" id="home">
-		<div class="home-content">
-			<h3>Hello, I am</h3>
-			<h1>Rahmadhani Yusuf</h1>
-			<p>Python Developer || Web Developer || AI Engineer || BackEnd Developer</p>
 
-			<div class="social-media">
-				<a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-				<a href="#"><i class="fa-brands fa-github fa-2xl"></i></a>
-				<a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-			</div>
+	<!-- main -->
+	<main>
 
-			<a href="#" class="btn">Download CV</a>
-		</div>
-		<div class="profession-container">
-			<div class="profession-box">
-				<div class="profession">
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- About Section -->
-	<section class="about" id="about">
-		<div class="about-content">
-			<div class="ab-ct-row">
-				<div class="ab-ct-top">
-					<img src="aku.jpg" alt="">
-				</div>
-				<div class="ab-ct-left">
-					<h3>About Me</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid at quaerat perspiciatis maxime.
-						Numquam libero officia incidunt? Quisquam ab molestiae consectetur saepe aut tenetur omnis,
-						doloremque itaque sapiente ducimus corrupti.</p>
-				</div>
-				<div class="ab-ct-right">
-					<h3>Details</h3>
-					<ul class="detail">
-						<li class="detail-list">1</li>
-						<li class="detail-list">1</li>
-						<li class="detail-list">1</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Skill Section -->
-	<section class="skill" id="skill">
-		<div class="skill-content">
-			<!-- <h3>My Skills</h3> -->
-			<div class="cards">
-				<div class="skill-card">
-					<!-- <img src="asset/python.svg" alt=""> -->
-					<i class="fa fa-python" aria-hidden="true"></i>
-					<h2>Python</h2>
-				</div>
-				<div class="skill-card">
-					<!-- <img src="asset/css.svg" alt=""> -->
-					<i class="fa-brands fa-css3-alt"></i>
-
-					<h2>CSS</h2>
-				</div>
-				<div class="skill-card">
-					<!-- <img src="asset/flutter.svg" alt=""> -->
-					<span class="material-symbols-outlined flutter">flutter</span>
-					<h2>Flutter</h2>
-				</div>
-				<div class="skill-card">
-					<!-- <img src="asset/git.svg" alt=""> -->
-					<i class="fa-brands fa-git-alt"></i>
-					<h2>GIT</h2>
-				</div>
-				<div class="skill-card">
-					<!-- <img src="asset/html.svg" alt=""> -->
-					<i class="fa-brands fa-html5"></i>
-					<h2>HTML</h2>
-				</div>
-				<div class="skill-card">
-					<!-- <img src="asset/js.svg" alt=""> -->
-					<i class="fa-brands fa-square-js"></i>
-
-					<h2>JavaScript</h2>
-				</div>
-				<div class="skill-card">
-					<!-- <img src="asset/linux-96.png" alt=""> -->
-					<i class="fa-brands fa-linux"></i>
-					<h2>Linux</h2>
-				</div>
-				<div class="skill-card">
-					<!-- <img src="asset/mongodb.svg" alt=""> -->
-					<i class="fa-brands fa-envira"></i>
-					<h2>MongoDB</h2>
-				</div>
-				<div class="skill-card">
-					<i class="fa fa-mysql" aria-hidden="true"></i>
-					<h2>MySQL</h2>
-				</div>
-				<div class="skill-card">
-					<!-- <img src="asset/nodejs.svg" alt=""> -->
-					<i class="fa-brands fa-node"></i>
-
-					<h2>NodeJS</h2>
-				</div>
-				<div class="skill-card">
-					<!-- <img src="asset/react.svg" alt=""> -->
-					<i class="fa fa-react" aria-hidden="true"></i>
-					<h2>ReactJS</h2>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Project Section -->
-	<section class="project" id="project">
-		<div class="project-content">
-			<!-- <h3>Project</h3> -->
-			<div class="project-cards">
-				<div class="project-card">
-					<img src="asset/images/aperture-vintage-HF1IO60tQdc-unsplash.jpg" alt="">
-					<div class="overlay">
-						<h3>Amazon Scrapper</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
-						<button>See More</button>
+		<!--Home Section -->
+		<section class="sc-home" id="home">
+			<div class="home-container">
+				<div class="hc-left">
+					<div class="left-title">
+						<h3>Hi am <span>Rahmadhani Yusuf<span></h3>
+						<p>Nothing last forever</p>
+					</div>
+					<div class="left-social-media">
+						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="#"><i class="fa-brands fa-square-github"></i></a>
+						<a href="#"><i class='bx bxl-gmail'></i></a>
+					</div>
+					<div class="left-button">
+						<a href="#about"><i class="fa-solid fa-circle-info"></i>About Me</a>
+						<a href=""><i class="fa-solid fa-cloud-arrow-down"></i>Download CV</a>
 					</div>
 				</div>
-				<div class="project-card">
-					<img src="asset/images/martin-martz-3_x1FRGAEwY-unsplash.jpg" alt="">
-					<div class="overlay">
-						<h3>Facebook Scrapper</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
-						<button>See More</button>
-					</div>
-				</div>
-				<div class="project-card">
-					<img src="asset/images/vimal-s-bVplevb7Bhk-unsplash.jpg" alt="">
-					<div class="overlay">
-						<h3>Google Scrapper</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
-						<button>See More</button>
-					</div>
-				</div>
-				<div class="project-card">
-					<img src="asset/images/warren-umoh-K7M7dQO-HrA-unsplash.jpg" alt="">
-					<div class="overlay">
-						<h3>Twitter Scrapper</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
-						<button>See More</button>
-					</div>
-				</div>
-				<div class="project-card">
-					<img src="asset/images/warren-umoh-pnMjGMOs2Xw-unsplash.jpg" alt="">
-					<div class="overlay">
-						<h3>LinkedIn Scrapper</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
-						<button>See More</button>
-					</div>
-				</div>
-				<div class="project-card">
-					<img src="asset/images/warren-umoh-VL12rhr4mi0-unsplash.jpg" alt="">
-					<div class="overlay">
-						<h3>YouTube Scrapper</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
-						<button>See More</button>
-					</div>
-				</div>
-			</div>
-			<Button>View More</Button>
-		</div>
-	</section>
-
-	<!-- Experience Section -->
-	<section class="experience" id="experience">
-		<div class="experience-content">
-			<div class="exp">
-				<h3>Senior Python Developer</h3>
-				<div class="exp-desc">
-					<h4>Scottech, Toledo</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat! Mollitia nostrum,
-						dolor repellat deleniti officiis voluptatem quas labore cupiditate iure ullam doloribus aliquam
-						voluptates. Ratione earum reprehenderit iure, esse assumenda minima vero delectus consequuntur.
-						Laborum eligendi nisi, doloremque, ab sint id enim in vel molestias, nihil vero suscipit a?
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat! Mollitia nostrum,
-						dolor repellat deleniti officiis voluptatem quas labore cupiditate iure ullam doloribus aliquam
-						voluptates. Ratione earum reprehenderit iure, esse assumenda minima vero delectus consequuntur.
-						Laborum eligendi nisi, doloremque, ab sint id enim in vel molestias, nihil vero suscipit a?</p>
-				</div>
-			</div>
-			<div class="exp">
-				<h3>Senior Python Developer</h3>
-				<div class="exp-desc">
-					<h4>Scottech, Toledo</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat! Mollitia nostrum,
-						dolor repellat deleniti officiis voluptatem quas labore cupiditate iure ullam doloribus aliquam
-						voluptates. Ratione earum reprehenderit iure, esse assumenda minima vero delectus consequuntur.
-						Laborum eligendi nisi, doloremque, ab sint id enim in vel molestias, nihil vero suscipit a?
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat! Mollitia nostrum,
-						dolor repellat deleniti officiis voluptatem quas labore cupiditate iure ullam doloribus aliquam
-						voluptates. Ratione earum reprehenderit iure, esse assumenda minima vero delectus consequuntur.
-						Laborum eligendi nisi, doloremque, ab sint id enim in vel molestias, nihil vero suscipit a?</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Contact Section -->
-	<section class="contact" id="contact">
-		<div class="container">
-			<form action="#">
-				<div class="form-row">
-					<div class="input-data">
-						<input type="text" required>
-						<div class="underline"></div>
-						<label for="">Name</label>
-					</div>
-				</div>
-				<div class="form-row">
-					<div class="input-data">
-						<input type="text" required>
-						<div class="underline"></div>
-						<label for="">Email Address</label>
-					</div>
-					<div class="input-data">
-						<input type="text" required>
-						<div class="underline"></div>
-						<label for="">Company Name</label>
-					</div>
-				</div>
-				<div class="form-row">
-					<div class="input-data textarea">
-						<textarea rows="8" cols="80" required></textarea>
-						<br />
-						<div class="underline"></div>
-						<label for="">Write your message</label>
-						<br />
-						<div class="form-row submit-btn">
-							<div class="input-data">
-								<div class="inner"></div>
-								<input type="submit" value="submit">
+				<div class="hc-right">
+					<div class="right-img">
+						<img src="assets/images/ab-img-1.jpg" width="800" height="864" alt="">
+						<div class="elm-img">
+							<div class="elm-1">
+								<i class="fa-brands fa-python"></i>
+								<p>Python Dev</p>
+							</div>
+							<div class="elm-2">
+								<i class="fa-brands fa-android"></i>
+								<p>Android Dev</p>
+							</div>
+							<div class="elm-3">
+								<i class="fa-solid fa-code"></i>
+								<p>
+									Many more</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</form>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section class="sc-about" id="about">
+			<div class="about-container">
+				<div class="ac-row">
+					<div class="row-left">
+						<div class="left-img">
+							<img src="assets/images/ab-pic.jpg" alt="">
+						</div>
+					</div>
+					<div class="row-right">
+						<div class="right-about">
+							<h1>Little about me</h1>
+							<p>I am a developer. I studied various programming languages. I am more interested in the
+								Python
+								programming language, because in my final project I am working on automatic detection of
+								facial expressions using the backpropagation method. Python is the programming language
+								that
+								I use in building the AI.</p>
+						</div>
+						<div class="right-skill">
+							<ul class="skill-list">
+								<li><i class='bx bxl-python'></i></li>
+								<li><i class='bx bxs-brain'></i></li>
+								<li><i class='bx bxl-dev-to'></i></li>
+								<li><i class="fa-brands fa-android"></i></li>
+								<li><i class='bx bxl-adobe'></i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Portfolio Section -->
+		<section class="sc-portfolio"  id="portfolio">
+			<div class="portfolio-container">
+				<div class="port-content">
+					Portfolio
+				</div>
+			</div>
+		</section>
+		<!-- Skill Section -->
+		<section id="skill">Section Skill</section>
+
+		<!-- Exp Section -->
+		<section id="exp">Section Exp</section>
+
+		<!-- Contact Section-->
+		<section id="contact">Section Contact</section>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer">
+			<i class='bx bx-copyright'>
+				Rahmadhani Yusuf 2023
+			</i>
 		</div>
-	</section>
+	</footer>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
 		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" type="text/javascript"></script>
-	<!-- custom script -->
-	<script src="script.js" type="text/javascript"></script>
+	<script src="assets/js/script.js"></script>
 </body>
 
 </html>

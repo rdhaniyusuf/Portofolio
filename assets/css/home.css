@@ -1,0 +1,322 @@
+.sc-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Adjust the height as needed */
+  background: linear-gradient(-45deg, var(--gradient-color));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  /* Adjust as needed */
+  align-items: center;
+  max-width: 150vh;
+  /* Adjust the maximum width as needed */
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.hc-left,
+.hc-right {
+  flex: 1;
+}
+
+.left-title {
+  text-align: left;
+}
+
+.left-title h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.left-title span {
+  color: var(--text-dark);
+  font-size: 3.1rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.left-title p {
+  color: var(--text-dark);
+  font-size: 1.3rem;
+  font-weight: 700;
+
+}
+
+.left-social-media {
+  margin-top: 2em;
+  display: flex;
+  justify-content: left;
+  gap: .7rem;
+  /* Adjust the gap between social media icons */
+}
+
+.left-social-media i {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.left-button {
+  margin-top: 2em;
+  display: flex;
+  justify-content: left;
+  text-decoration: none;
+  width: fit-content;
+  color: var(--bg-white);
+  margin-left: -.3em;
+  gap: .2rem;
+}
+
+.left-button a {
+  background-color: var(--primary);
+  border-radius: .2em;
+  padding: .7rem;
+  height: max-content;
+  width: max-content;
+  text-decoration: none;
+  font-size: .8rem;
+  border: .1em solid var(--primary);
+  color: var(--bg-white);
+}
+
+.left-button a i {
+  margin-right: .5em;
+  text-decoration: none;
+}
+
+.left-button a:hover {
+  background-color: transparent;
+  transition: var(--transition-2);
+  border: .1em solid var(--primary);
+  box-shadow: var(--shadow);
+  color: var(--primary);
+
+}
+
+.right-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+}
+
+.right-img img {
+  padding: 1.3rem;
+  width: 40vh;
+  /* Adjust as needed */
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.elm-img {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-weight: 600;
+  align-items: stretch;
+}
+
+.elm-1,
+.elm-2,
+.elm-3 {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  gap: 10%;
+  width: max-content;
+  background-color: var(--primary);
+  border-radius: 15px;
+  padding: 10%;
+  margin: 2%;
+  color: var(--bg-white);
+  border-color: var(--primary);
+  box-shadow: var(--shadow);
+}
+
+.elm-1 {
+  position: relative;
+  top: 0vh;
+  left: -5vw;
+  justify-content: center;
+  align-items: center;
+  animation: elm-1 2s infinite alternate;
+  -webkit-animation: elm-1 2s infinite alternate;
+}
+
+.elm-2 {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 15vh;
+  left: 8vw;
+  animation: elm-1 2s infinite alternate;
+  -webkit-animation: elm-1 2s infinite alternate;
+
+}
+
+.elm-3 {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 27vh;
+  left: -2vw;
+  animation: elm-1 2s infinite alternate;
+  -webkit-animation: elm-1 2s infinite alternate;
+
+}
+
+.elm-1 i {
+  font-size: 1.3rem;
+}
+
+.elm-1 p {
+  font-size: .5rem;
+  flex: 1 0 auto;
+  cursor: default;
+}
+
+.elm-2 i {
+  font-size: 1.3rem;
+}
+
+.elm-2 p {
+  font-size: .5rem;
+  flex: 1 0 auto;
+  cursor: default;
+}
+
+.elm-3 i {
+  font-size: 1.2rem;
+}
+
+.elm-3 p {
+  font-size: .5rem;
+  flex: 1 0 auto;
+  cursor: default;
+}
+
+@-webkit-keyframes elm-1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes elm-1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  .elm-1,
+  .elm-2,
+  .elm-3 {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:576px) {
+  .home-container {
+    position: relative;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    height: 100vh;
+    padding: 20%;
+  }
+
+  .hc-left,
+  .hc-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-title {
+    text-align: center;
+    color: var(--text-dark);
+  }
+
+  .left-title h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+
+  .left-title span {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.8em;
+    font-weight: 800;
+    padding: none;
+    color: var(--text-dark);
+    text-decoration: none;
+  }
+
+  .left-title p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+
+  .left-social-media {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+  }
+
+  .left-social-media i {
+    font-size: 2rem;
+  }
+
+  .left-button {
+    margin-top: 2%;
+  }
+
+  .elm-1,
+  .elm-2,
+  .elm-3 {
+    display: none;
+  }
+}
