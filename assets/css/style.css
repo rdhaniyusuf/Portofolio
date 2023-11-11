@@ -7,7 +7,7 @@
 	--text-dark: #141414;
 	--bg-dark: rgb(16, 16, 16);
 	--primary: rgb(109, 34, 221);
-	--secondary: #52a2d1;
+	--secondary: #d19852;
 	--alert-warning: #db213d;
 	--alert-done: #65eb91;
 	--button: var(--primary);
@@ -82,20 +82,23 @@ main {
 }
 
 main section {
-	/* border: .1em solid; */
-	position: flex;
+	display: flex;
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
+	background-color: var(--header-color);
+	color: var(--bg-white);
 }
 
 @media screen and (max-width:768px) {
 	main {
 		box-sizing: content-box;
+		scroll-behavior: smooth;
 	}
 
 	main section {
 		display: flex;
 		justify-content: center;
 		height: fit-content;
+		width: max-content;
 	}
 }

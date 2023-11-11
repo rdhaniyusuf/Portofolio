@@ -4,9 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-
 	height: max-content;
-	background-color: var(--header-color);
 	color: var(--bg-white);
 }
 
@@ -87,40 +85,36 @@
 	text-align: justify;
 }
 
-.right-skil {
+.right-skill {
 	position: relative;
 	width: 100%;
 }
 
-.skill-list {
+.skill-list-ab{
+	position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
 	list-style: none;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	flex-direction: row;
-
 }
 
 
-.skill-list li {
+.skill-list-ab li {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	font-size: 2rem;
 	padding: 1rem;
 	border: 1px solid;
 	border-radius: 50%;
-	/* color: var(--header-color); */
-	/* background-color: var(--bg-white); */
 	background-repeat: repeat-x;
 	background-position: 0 -100%;
 	transition: 1.5s ease;
 	background-image: url('https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871');
 }
 
-.skill-list li:hover {
-	/* border: .1rem solid;
-	color: var(--bg-white);
-	background-color: transparent; */
+.skill-list-ab li:hover {
 	background-position: center;
 	filter: hue-rotate(100deg);
 }
@@ -203,7 +197,7 @@
 		margin: 2rem;
 	}
 
-	.skill-list {
+	.skill-list-ab {
 		display: flex;
 		gap: .3rem
 	}

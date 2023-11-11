@@ -1,11 +1,9 @@
 footer {
   position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  width: 100vw;
   background-color:var(--bg-dark); /* Change to your preferred background color */
   color:var(--bg-white); /* Change to your preferred text color */
-  padding: 10px;
+  padding: 1%;
   text-align: center;
   border-radius: .1rem;
 }

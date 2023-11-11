@@ -14,3 +14,28 @@ window.onscroll = () => {
 		header.classList.remove('sticky');
 	}
 };
+
+// /**
+//  * navbar toggle
+//  */
+
+// const header = document.querySelector("[nav-navbar]");
+// const navToggleBtn = document.querySelector("[nav-toggle]");
+
+// navToggleBtn.addEventListener("click", function () {
+//   header.classList.toggle("nav-active");
+//   this.classList.toggle("active");
+// });
+
+// /**
+//  * toggle the navbar when click any navbar link
+//  */
+
+// const navbarLinks = document.querySelectorAll("[navbar-item]");
+
+// for (let i = 0; i < navbarLinks.length; i++) {
+//   navbarLinks[i].addEventListener("click", function () {
+//     header.classList.toggle("nav-active");
+//     navToggleBtn.classList.toggle("active");
+//   });
+// }
