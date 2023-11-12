@@ -9,34 +9,27 @@
 		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/header.css">
-	<link rel="stylesheet" href="assets/css/home.css">
-	<link rel="stylesheet" href="assets/css/about.css">
-	<link rel="stylesheet" href="assets/css/portfolio.css">
-	<link rel="stylesheet" href="assets/css/skill.css">
-	<link rel="stylesheet" href="assets/css/contact.css">
-	<link rel="stylesheet" href="assets/css/footer.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+	<link rel="stylesheet" href="assets/css/exp.css">
 </head>
 
 <body>
 	<!-- Header -->
 	<header class="header">
-		<div class="nav-logo">rdhaniy_</div>
-		<nav>
-			<div class="nav-toggle"><i class="fa-solid fa-bars-staggered"></i></div>
-			<div class="nav-navbar">
+		<div class="header-container">
+			<div class="nav-logo">rdhaniy_</div>
+			<div class="nav-toggle" id="navToggle"><i class="fa-solid fa-bars-staggered"></i></div>
+			<nav class="nav-navbar" id="navbar">
 				<ul class="navbar-list">
 					<li class="navbar-item"><a href="#home">Home</a></li>
 					<li class="navbar-item"><a href="#about">About</a></li>
-					<li class="navbar-item"><a href="#portfolio">Portfolio</a></li>
 					<li class="navbar-item"><a href="#skill">Skill</a></li>
-					<li class="navbar-item"><a href="#exp">Exp</a></li>
+					<li class="navbar-item"><a href="#portfolio">Portfolio</a></li>
+					<li class="navbar-item"><a href="#exp">Experience</a></li>
 					<li class="navbar-item"><a href="#contact">Contact</a></li>
 				</ul>
-			</div>
-		</nav>
-
+			</nav>
+		</div>
 	</header>
 
 	<!-- main -->
@@ -115,78 +108,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- Portfolio Section -->
-		<section class="sc-portfolio" id="portfolio">
-			<div class="portfolio-container">
-				<h3 class="port-title">Portfolio</h3>
-				<h1 class="port-subtitle">My Amazing Work</h1>
-				<p class="port-desc">This is my project that i have done</p>
-				<div class="port-content">
-					<ul class="port-list">
-						<li class="port-card">
-							<img src="assets/images/port/1.jpg" alt="">
-							<div class="card-content">
-								<div class="card-overlay">
-									<h4>Apa</h4>
-									<p>Apaaan?</p>
-									<button>See More</button>
-								</div>
-							</div>
-						</li>
-						<li class="port-card">
-							<img src="assets/images/port/2.jpg" alt="">
-							<div class="card-content">
-								<div class="card-overlay">
-									<h4>Apa</h4>
-									<p>Apaaan?</p>
-									<button>See More</button>
-								</div>
-							</div>
-						</li>
-						<li class="port-card">
-							<img src="assets/images/port/3.jpg" alt="">
-							<div class="card-content">
-								<div class="card-overlay">
-									<h4>Apa</h4>
-									<p>Apaaan?</p>
-									<button>See More</button>
-								</div>
-							</div>
-						</li>
-						<li class="port-card">
-							<img src="assets/images/port/4.jpg" alt="">
-							<div class="card-content">
-								<div class="card-overlay">
-									<h4>Apa</h4>
-									<p>Apaaan?</p>
-									<button>See More</button>
-								</div>
-							</div>
-						</li>
-						<li class="port-card">
-							<img src="assets/images/port/5.jpg" alt="">
-							<div class="card-content">
-								<div class="card-overlay">
-									<h4>Apa</h4>
-									<p>Apaaan?</p>
-									<button>See More</button>
-								</div>
-							</div>
-						</li>
-						<li class="port-card">
-							<img src="assets/images/port/6.jpg" alt="">
-							<div class="card-content">
-								<div class="card-overlay">
-									<h4>Apa</h4>
-									<p>Apaaan?</p>
-									<button>See More</button>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+
 		<!-- Skill Section -->
 		<section class="sc-skill" id="skill">
 			<div class="skill-container">
@@ -272,15 +194,88 @@
 			</div>
 		</section>
 
+		<!-- Portfolio Section -->
+		<section class="sc-portfolio" id="portfolio">
+			<div class="portfolio-container">
+				<h3 class="port-title">Portfolio</h3>
+				<h1 class="port-subtitle">My Amazing Work</h1>
+				<p class="port-desc">This is my project that i have done</p>
+				<div class="port-content">
+					<ul class="port-list">
+						<li class="port-card">
+							<img src="assets/images/port/1.jpg" alt="">
+							<div class="card-content">
+								<div class="card-overlay">
+									<h4>Apa</h4>
+									<p>Apaaan?</p>
+									<button>See More</button>
+								</div>
+							</div>
+						</li>
+						<li class="port-card">
+							<img src="assets/images/port/2.jpg" alt="">
+							<div class="card-content">
+								<div class="card-overlay">
+									<h4>Apa</h4>
+									<p>Apaaan?</p>
+									<button>See More</button>
+								</div>
+							</div>
+						</li>
+						<li class="port-card">
+							<img src="assets/images/port/3.jpg" alt="">
+							<div class="card-content">
+								<div class="card-overlay">
+									<h4>Apa</h4>
+									<p>Apaaan?</p>
+									<button>See More</button>
+								</div>
+							</div>
+						</li>
+						<li class="port-card">
+							<img src="assets/images/port/4.jpg" alt="">
+							<div class="card-content">
+								<div class="card-overlay">
+									<h4>Apa</h4>
+									<p>Apaaan?</p>
+									<button>See More</button>
+								</div>
+							</div>
+						</li>
+						<li class="port-card">
+							<img src="assets/images/port/5.jpg" alt="">
+							<div class="card-content">
+								<div class="card-overlay">
+									<h4>Apa</h4>
+									<p>Apaaan?</p>
+									<button>See More</button>
+								</div>
+							</div>
+						</li>
+						<li class="port-card">
+							<img src="assets/images/port/6.jpg" alt="">
+							<div class="card-content">
+								<div class="card-overlay">
+									<h4>Apa</h4>
+									<p>Apaaan?</p>
+									<button>See More</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
 		<!-- Exp Section -->
-		<!-- <section id="exp">Section Exp</section> -->
+		<section id="exp">Section Exp</section>
 
 		<!-- Contact Section-->
 		<section class="sc-contact" id="contact">
 			<div class="contact-container">
 				<div class="contact-card">
-					<h3 class="contact-title">Jangan Ragu</h3>
-					<h1 class="contact-subtitle">Kirim Saya Email</h1>
+					<h3 class="contact-title">Contact Me</h3>
+					<h1 class="contact-subtitle">send me message</h1>
 					<div class="c-wrapper">
 						<form action="" class="c-form">
 							<input type="text" class="cf-input">
