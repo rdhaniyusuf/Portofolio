@@ -273,15 +273,34 @@
 		<!-- Contact Section-->
 		<section class="sc-contact" id="contact">
 			<div class="contact-container">
+				<div class="alert-submit">
+					<div class="submit-success">
+						<i class='bx bx-message-square-check'>
+							<span>Success send message</span>
+						</i>
+					</div>
+					<div class="submit-fail">
+						<i class='bx bx-message-square-x'>
+							<span>Fail when sending message</span>
+						</i>
+					</div>
+				</div>
 				<div class="contact-card">
 					<h3 class="contact-title">Contact Me</h3>
 					<h1 class="contact-subtitle">send me message</h1>
 					<div class="c-wrapper">
-						<form action="" class="c-form" name="submit-message-google">
-							<input type="text" class="cf-input" name="name" placeholder="name" type="text" autocomplete="false" required>
-							<input type="text" class="cf-input" name="email" type="email" placeholder="email" autocomplete="false" required>
-							<textarea class="cf-input" name="message" placeholder="message" type="text" autocomplete="false" required></textarea>
-							<button type="submit" class="cf-btn">Submit</button>
+						<form class="c-form" name="submit-message-google">
+							<input type="text" class="cf-input" name="name" placeholder="name" type="text"
+								autocomplete="false" required>
+							<input type="text" class="cf-input" name="email" type="email" placeholder="email"
+								autocomplete="false" required>
+							<textarea class="cf-input" name="message" placeholder="message" type="text"
+								autocomplete="false" required></textarea>
+							<button type="submit" class="cf-btn" id="btn-submit">Submit</button>
+							<button class="cf-btn-loading" disabled id="btn-loading">
+								<span class="loader"></span>
+								Loading
+							</button>
 						</form>
 
 						<ul class="c-list">
