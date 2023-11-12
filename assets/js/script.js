@@ -57,3 +57,14 @@ window.addEventListener('scroll', function () {
     }
   }
 });
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz1vij2gv6CNJoF8_lnphm7PReue3oqNgfwGIzmW0ItULnhG85rfIORg_pZY5pS2KiDOg/exec';
+const form = document.forms['submit-message-google'];
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+})

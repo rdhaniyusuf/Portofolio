@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" Access-Control-Allow-Origin: *>
 
 <head>
 	<meta charset="UTF-8">
@@ -277,10 +277,10 @@
 					<h3 class="contact-title">Contact Me</h3>
 					<h1 class="contact-subtitle">send me message</h1>
 					<div class="c-wrapper">
-						<form action="" class="c-form">
-							<input type="text" class="cf-input">
-							<input type="text" class="cf-input">
-							<textarea name="" class="cf-input"></textarea>
+						<form action="" class="c-form" name="submit-message-google">
+							<input type="text" class="cf-input" name="name" placeholder="name" type="text" autocomplete="false" required>
+							<input type="text" class="cf-input" name="email" type="email" placeholder="email" autocomplete="false" required>
+							<textarea class="cf-input" name="message" placeholder="message" type="text" autocomplete="false" required></textarea>
 							<button type="submit" class="cf-btn">Submit</button>
 						</form>
 
