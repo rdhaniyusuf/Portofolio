@@ -1,0 +1,4 @@
+.blured {
+    filter: blur(.1rem); /* Adjust the blur amount as needed */
+    transition: filter 0.5s ease; /* Add a transition for smooth effect */
+}

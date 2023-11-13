@@ -3,9 +3,9 @@
 :root {
 	/* color */
 	--white: rgb(237, 237, 237);
-	--dark: rgb(16, 16, 16);
+	--dark: #1b1c1e;
 	--purple: rgb(69, 25, 82);
-	--red: rgb(102, 37, 73);
+	--redp: rgb(102, 37, 73);
 	--pink: rgb(174, 68, 90);
 	--orange: rgb(243, 159, 90);
 	--red: #db213d;
@@ -31,7 +31,7 @@
 
 	/* width height */
 	--max-width: 100vw;
-	--max-height: 'max-content'
+	--max-height: 'max-content';
 
 		/* typo */
 
@@ -129,7 +129,7 @@ p {
 }
 
 .header.sticky {
-position: fixed;
+	position: fixed;
 	background-color: var(--header-color);
 	border-bottom: 1px solid var(--shadow-color);
 	top: 0;
@@ -1094,12 +1094,13 @@ textarea.contact-input {
 }
 
 .submit-success.show,
-.submit-fail.show{
+.submit-fail.show {
 	display: flex;
 	transform: translateY(-10%);
 	animation: submit-alert 1s ease;
 	-webkit-animation: submit-alert 1s ease;
 }
+
 @-webkit-keyframes submit-alert {
 	0% {
 		opacity: 0;

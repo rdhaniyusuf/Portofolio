@@ -21,41 +21,57 @@ window.onscroll = () => {
 const navToggle = document.getElementById('navToggle');
 const navbar = document.getElementById('navbar');
 
+const blurMain = document.querySelector('main')
+
+// Function to toggle the blur effect on the main content
+function toggleBlur() {
+  blurMain.classList.toggle('blured');
+}
+
+function hideMenu() {
+  navbar.classList.remove('active');
+  blurMain.classList.remove('blured');
+}
+
+
 navToggle.addEventListener('click', function () {
   navbar.classList.toggle('active');
+  toggleBlur()
 });
 
-// Get all the navbar items
+
 const sections = document.querySelectorAll('section');
 const navbarItems = document.querySelectorAll('.nav-navbar .navbar-item');
 
-// Add scroll event listener
+navbarItems.forEach(item => {
+  item.addEventListener('click', hideMenu);
+});
+
 window.addEventListener('scroll', function () {
   let currentSection = null;
 
-  sections.forEach(section => {
-    // Calculate the position of each section
-    const sectionTop = section.offsetTop - 90; // Adjust as needed
-    const sectionBottom = sectionTop + section.clientHeight;
+  sections.forEach(sections => {
 
-    // Check if the user has scrolled to a section
+    const sectionTop = sections.offsetTop - 90;
+    const sectionBottom = sectionTop + sections.clientHeight;
+
     if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
-      currentSection = section;
+      currentSection = sections;
     }
   });
 
-  // Remove the "active" class from all navbar items
   navbarItems.forEach(item => {
     item.classList.remove('active');
   });
 
   if (currentSection) {
-    // Get the corresponding navbar item and add the "active" class
     const correspondingNavItem = document.querySelector(`a[href="#${currentSection.id}"]`);
     if (correspondingNavItem) {
       correspondingNavItem.parentElement.classList.add('active');
     }
   }
+
+  hideMenu();
 });
 
 

@@ -26,6 +26,7 @@
 }
 
 .exp-content {
+	
 	width: 100%;
 	height: auto;
 	padding: 0 10% 0 10%;
@@ -44,6 +45,7 @@
 }
 
 .exp-item {
+	background-color: var(--redp);
 	width: 100%;
 	box-shadow: var(--shadow);
 	border-radius: .5rem;
@@ -102,6 +104,26 @@
 		width: 100vw;
 		height: max-content;
 	}
+	.exp-content {
+	width: 100%;
+	height: auto;
+	padding: 0 5% 0 5%;
+}
+.exp-list {
+	list-style: none;
+	display: flex;
+	padding-left: 0;
+	padding-right: 0;
+	gap: 1rem;
+	width: 100%;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+}
+.exp-item {
+	padding: 1%;
+}
 }
 
 @media screen and (max-width:576px) {
