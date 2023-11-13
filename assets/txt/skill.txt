@@ -1,0 +1,12 @@
+Python,90%
+Jupyter Notebook, 85%
+java, 65%
+CSS,70%
+Java Script,80%
+Adobe,60%
+Node.Js, 50%
+Flutter,40%
+SQL, 60%
+ML, 75%
+AI, 80%
+MongoDB,60%

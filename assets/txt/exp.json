@@ -1,0 +1,25 @@
+[
+	{
+		"name": "exp",
+		"data": [
+			{
+				"exp_title": "Java",
+				"exp_job": "koding",
+				"exp_desc": "Ut incididunt sit pariatur adipisicing voluptate consectetur. Dolore adipisicing nulla cillum labore proident do. Esse sint quis Lorem quis eu commodo eiusmod anim dolore consequat eu incididunt dolore quis. Incididunt nulla ipsum cupidatat esse qui ullamco Lorem. Excepteur reprehenderit ut pariatur anim cillum dolor sit elit do aliquip do. Ea sit occaecat ea deserunt ullamco sint reprehenderit aliquip dolore officia excepteur proident id exercitation.",
+				"exp_img": "assets/images/ab-img-1.jpg"
+			},
+			{
+				"exp_title": "java",
+				"exp_job": "koding",
+				"exp_desc": "Ut incididunt sit pariatur adipisicing voluptate consectetur. Dolore adipisicing nulla cillum labore proident do. Esse sint quis Lorem quis eu commodo eiusmod anim dolore consequat eu incididunt dolore quis. Incididunt nulla ipsum cupidatat esse qui ullamco Lorem. Excepteur reprehenderit ut pariatur anim cillum dolor sit elit do aliquip do. Ea sit occaecat ea deserunt ullamco sint reprehenderit aliquip dolore officia excepteur proident id exercitation.",
+				"exp_img": "assets/images/ab-img-1.jpg"
+			},
+			{
+				"exp_title": "python",
+				"exp_job": "apa hayo",
+				"exp_desc": "Ex reprehenderit duis proident nisi id aute enim. Dolor tempor aliqua ex nostrud voluptate proident in id consectetur proident minim proident excepteur. Cupidatat laborum nostrud id cillum ex est labore proident commodo dolor cillum voluptate ut. Incididunt aliqua sunt aute anim Lorem exercitation exercitation ex consectetur ullamco laborum." ,
+				"exp_img": "assets/images/ab-img-1.jpg"
+			}
+		]
+	}
+]
