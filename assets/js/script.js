@@ -117,7 +117,7 @@ form.addEventListener('submit', e => {
 
 
 function displaySkill() {
-  fetch('../assets/txt/skill.txt')
+  fetch('./assets/txt/skill.txt')
     .then(response => response.text())
     .then(data => {
       const lines = data.split('\n');
@@ -197,7 +197,7 @@ function showExp(item) {
 
 
 function displayExp() {
-  fetch("../assets/txt/exp.json")
+  fetch("./assets/txt/exp.json")
     .then(response => response.json())
     .then(data => {
       // Loop through the JSON data and populate the HTML elements
