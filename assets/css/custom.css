@@ -35,8 +35,8 @@
 
 		/* typo */
 
-		--ff-lato: 'Lato', sans-serif;
-	--ff-open-sans: 'Open Sans', sans-serif;
+		/* --ff-lato: 'Lato', sans-serif;
+	--ff-open-sans: 'Open Sans', sans-serif; */
 	--ff-work-sans: 'Work Sans', sans-serif;
 
 	--fs-1: 3.5rem;
@@ -797,6 +797,7 @@ p {
 	position: relative;
 	display: flex;
 	flex-wrap: nowrap;
+	max-height: fit-content;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -822,7 +823,7 @@ p {
 .skill-content {
 	position: relative;
 	width: 100%;
-	height: max-content;
+	height:max-content;
 }
 
 .skill-list {
@@ -847,7 +848,7 @@ p {
 .skill-wrapper {
 	position: relative;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	flex-direction: row;
 	align-content: stretch;
 	align-items: center;
@@ -878,6 +879,7 @@ p {
 	height: 100%;
 	border-radius: inherit;
 }
+
 
 .sc-contact {
 	position: relative;
@@ -913,7 +915,7 @@ p {
 }
 
 .contact-title {
-	color: var(--alert-warning);
+	color: var(--primary);
 	font-size: 1.6rem;
 }
 

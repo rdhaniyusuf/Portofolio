@@ -3,22 +3,32 @@
 		"name": "exp",
 		"data": [
 			{
-				"exp_title": "Java",
-				"exp_job": "koding",
-				"exp_desc": "Ut incididunt sit pariatur adipisicing voluptate consectetur. Dolore adipisicing nulla cillum labore proident do. Esse sint quis Lorem quis eu commodo eiusmod anim dolore consequat eu incididunt dolore quis. Incididunt nulla ipsum cupidatat esse qui ullamco Lorem. Excepteur reprehenderit ut pariatur anim cillum dolor sit elit do aliquip do. Ea sit occaecat ea deserunt ullamco sint reprehenderit aliquip dolore officia excepteur proident id exercitation.",
-				"exp_img": "assets/images/ab-img-1.jpg"
+				"exp_title": "Web Motor Bike ",
+				"exp_year" : "2019-2020",
+				"exp_job": "Back End Dev",
+				"exp_desc":"Saya membangun situs web untuk tugas akhir, bagian saya adalah Back End Developer. Dengan menggunakan Laravel sebagai framework untuk memudahkan saya membangun website tersebut."
+			
 			},
 			{
-				"exp_title": "java",
+				"exp_title": "Game Alex",
+				"exp_year" : "2020",
 				"exp_job": "koding",
-				"exp_desc": "Ut incididunt sit pariatur adipisicing voluptate consectetur. Dolore adipisicing nulla cillum labore proident do. Esse sint quis Lorem quis eu commodo eiusmod anim dolore consequat eu incididunt dolore quis. Incididunt nulla ipsum cupidatat esse qui ullamco Lorem. Excepteur reprehenderit ut pariatur anim cillum dolor sit elit do aliquip do. Ea sit occaecat ea deserunt ullamco sint reprehenderit aliquip dolore officia excepteur proident id exercitation.",
-				"exp_img": "assets/images/ab-img-1.jpg"
+				"exp_desc":"Sederhana nya game ini meruakan game indie layaknya super mario, dengan melawan setiap monster yang ada, untuk mencapai level berikutnya. Saya menjadi bagian untuk membangun sekaligus menentukan komposisi musik yang di gunakan, dengan berbasis aplikasi construct 3"
+			
 			},
 			{
-				"exp_title": "python",
-				"exp_job": "apa hayo",
-				"exp_desc": "Ex reprehenderit duis proident nisi id aute enim. Dolor tempor aliqua ex nostrud voluptate proident in id consectetur proident minim proident excepteur. Cupidatat laborum nostrud id cillum ex est labore proident commodo dolor cillum voluptate ut. Incididunt aliqua sunt aute anim Lorem exercitation exercitation ex consectetur ullamco laborum." ,
-				"exp_img": "assets/images/ab-img-1.jpg"
+				"exp_title": "Portal Event Amikom ",
+				"exp_year" : "2019",
+				"exp_job": " Front/Back End, Program Testing",
+				"exp_desc": "Aplikasi Berbasis Android, saya membangun di bagian UI/UX dan basis datanya. Basis data yang digunakan adalah Firebase yang sudah mendukung data cloud"
+			
+			},
+			{
+				"exp_title": "Tugas akhir pengenalan Emosi Wajah",
+				"exp_year" : "2021-2023",
+				"exp_job": "Fullstack",
+				"exp_desc": "Dengan menggunakan Bahasa pemrograman python dan IDE Jupyter Notebook maka memudahkan saya untuk mengerjakan tugas akhir. Karena dengan Bahasa dan IDE ini saya mampu mengembangkan algoritma yang saya gunakan. "
+			
 			}
 		]
 	}

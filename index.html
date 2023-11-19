@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" Access-Control-Allow-Origin: *>
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
+
+	<link rel="stylesheet"
+		href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Work+Sans&display=swap'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="assets/css/blur-main.css">
-	<link rel="stylesheet" href="assets/css/custom.css">
-	<link rel="stylesheet" href="assets/css/exp.css">
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
 
-	<link rel="stylesheet" href="assets/css/input.css">
+	<link rel="stylesheet" href="assets/css/blur-main.css" />
+	<!-- <link rel="stylesheet" href="assets/css/new.css" /> -->
+
+	<!-- responsive -->
+	<!-- <link rel="stylesheet" href="assets/css/responsive/navbar.css">
+	 <link rel="stylesheet" href="assets/css/responsive/home.css">
+	 <link rel="stylesheet" href="assets/css/responsive/about.css">
+	 <link rel="stylesheet" href="assets/css/responsive/skill.css">
+	 <link rel="stylesheet" href="assets/css/responsive/port.css">
+	 <link rel="stylesheet" href="assets/css/responsive/exp.css">
+	 <link rel="stylesheet" href="assets/css/responsive/contact.css"> -->
+
+	<link rel="stylesheet" href="dump/style.css">
+
 </head>
 
 <body>
 	<!-- Header -->
 	<header class="header">
 		<div class="header-container">
-			<div class="nav-logo">rdhaniy_</div>
+			<div class="nav-logo">
+				<p>rdhaniy_</p>
+			</div>
 			<div class="nav-toggle" id="navToggle"><i class="fa-solid fa-bars-staggered"></i></div>
 			<nav class="nav-navbar" id="navbar">
 				<ul class="navbar-list">
@@ -39,25 +54,27 @@
 	<main>
 		<!--Home Section -->
 		<section class="sc-home" id="home">
-			<div class="home-container">
-				<div class="hc-left">
+			<div class="flex-row home-container">
+				<div class="col-5 hc-left">
 					<div class="left-title">
-						<h3>Hi am <span>Rahmadhani Yusuf<span></h3>
+						<h1>Hi am <span>Rahmadhani Yusuf</span></h1>
 						<p>Nothing last forever</p>
 					</div>
 					<div class="left-social-media">
-						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-						<a href="#"><i class="fa-brands fa-square-github"></i></a>
-						<a href="#"><i class='bx bxl-gmail'></i></a>
+						<a href="https://www.linkedin.com/in/rdhaniyusuf2304"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://github.com/rdhaniyusuf"><i class="fa-brands fa-square-github"></i></a>
+						<a href="mailto:rahmadhani2202@gmail.com"><i class='bx bxl-gmail'></i></a>
 					</div>
 					<div class="left-button">
 						<a href="#about"><i class="fa-solid fa-circle-info"></i>About Me</a>
-						<a href=""><i class="fa-solid fa-cloud-arrow-down"></i>Download CV</a>
+						<a href="#download-cv"><i class="fa-solid fa-cloud-arrow-down"></i>Download CV</a>
 					</div>
 				</div>
-				<div class="hc-right">
+				<div class="col-5 hc-right">
 					<div class="right-img">
-						<img src="assets/images/ab-img-1.jpg" width="800" height="864" alt="">
+						<img src="assets/images/ab-img-1.webp" alt="" />
+					</div>
+					<div class="right-elm">
 						<div class="elm-img">
 							<div class="elm-1">
 								<i class="fa-brands fa-python"></i>
@@ -69,8 +86,7 @@
 							</div>
 							<div class="elm-3">
 								<i class="fa-solid fa-code"></i>
-								<p>
-									Many more</p>
+								<p>And more</p>
 							</div>
 						</div>
 					</div>
@@ -80,60 +96,89 @@
 
 		<!-- About Section -->
 		<section class="sc-about" id="about">
-			<div class="about-container">
-				<div class="ac-row">
-					<div class="row-left">
-						<div class="left-img">
-							<img src="assets/images/ab-pic.jpg" alt="">
-						</div>
+			<div class="flex-row about-container">
+				<!-- <div class="ac-row"> -->
+				<div class="col-5 img-left">
+					<img src="assets/images/ab-pic.webp" alt="" />
+				</div>
+				<div class="col-5 row-right">
+					<div class="row-col col-12 right-about">
+						<h1>About me</h1>
+						<p>I am a developer. I studied various programming languages. I am more interested in the
+							Python
+							programming language, because in my final project I am working on automatic detection of
+							facial expressions using the backpropagation method. Python is the programming language
+							that
+							I use in building the AI.</p>
 					</div>
-					<div class="row-right">
-						<div class="right-about">
-							<h1>About me</h1>
-							<p>I am a developer. I studied various programming languages. I am more interested in the
-								Python
-								programming language, because in my final project I am working on automatic detection of
-								facial expressions using the backpropagation method. Python is the programming language
-								that
-								I use in building the AI.</p>
-						</div>
-						<div class="right-skill">
-							<ul class="skill-list-ab">
-								<li><i class='bx bxl-python'></i></li>
-								<li><i class='bx bxs-brain'></i></li>
-								<li><i class='bx bxl-dev-to'></i></li>
-								<li><i class="fa-brands fa-android"></i></li>
-								<li><i class='bx bxl-adobe'></i></li>
-							</ul>
-						</div>
+					<div class="row-col col-12 right-skill">
+						<ul class="flex-row col-12 skill-list-ab">
+							<li><i class='bx bxl-python'></i></li>
+							<li><i class='bx bxs-brain'></i></li>
+							<li><i class='bx bxl-dev-to'></i></li>
+							<li><i class="fa-brands fa-android"></i></li>
+							<li><i class='bx bxl-adobe'></i></li>
+						</ul>
 					</div>
 				</div>
+				<!-- </div> -->
 			</div>
 		</section>
 
 		<!-- Skill Section -->
 		<section class="sc-skill" id="skill">
-			<div class="skill-container">
-				<h3 class="skill-title">My Skill</h3>
-				<h1 class="skill-subtitle">I Develope Skill Regulary</h1>
-				<p class="skil-desc">this is desc about my skill</p>
-				<div class="skill-content">
-					<ul class="skill-list">
+			<div class="flex-row skill-container">
+				<h1 class="col-12 skill-title">My Skill</h1>
+				<h3 class="col-12 skill-subtitle">I Develope Skill Regulary</h3>
+				<p class="col-12 skill-desc">this is desc about my skill</p>
+				<div class="col-12 row-col skill-content">
+					<ul class="col-12 row-col skill-list">
+						<li class="col-5 flex-row skill-item">
+							<div class="col-12 flex-row skill-wrapper" style="width: 90%;">
+								<h3 class="sw-title">Python</h3>
+								<data class="sw-data" value="90%" style="left: 90%;">90%
+								</data>
+							</div>
+							<div class="col-12 skill-bar-box">
+								<div class="skill-bar" style="width: 90%;"></div>
+							</div>
+						</li>
+						<li class="col-5 row-col skill-item">
+							<div class="col-12 flex-row skill-wrapper" style="width: 90%;">
+								<h3 class="sw-title">Python</h3><data class="sw-data" value="90%" style="left: 90%;">90%
+								</data>
+							</div>
+							<div class="col-12 skill-bar-box">
+								<div class="skill-bar" style="width: 90%;"></div>
+							</div>
+						</li>
 					</ul>
+					<div class="col-12 expand-button-skill">
+						<button class="collapse-btn" onclick="toggleSkillContent(false)">
+							<i class='bx bxs-down-arrow'></i>
+							collapse me
+							<i class='bx bxs-up-arrow'></i>
+						</button>
+						<button class="expand-btn" onclick="toggleSkillContent(true)">
+							<i class='bx bxs-up-arrow'></i>
+							expand me
+							<i class='bx bxs-down-arrow'></i>
+						</button>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Portfolio Section -->
 		<section class="sc-portfolio" id="portfolio">
-			<div class="portfolio-container">
-				<h3 class="port-title">Portfolio</h3>
-				<h1 class="port-subtitle">My Amazing Work</h1>
-				<p class="port-desc">This is my project that i have done</p>
-				<div class="port-content">
-					<ul class="port-list">
-						<li class="port-card">
-							<img src="assets/images/port/1.webp" alt="">
+			<div class="flex-row portfolio-container">
+				<h1 class="col-12 port-title">Portfolio</h1>
+				<h3 class="col-12 port-subtitle">My Amazing Work</h3>
+				<p class="col-12 port-desc">This is my project that i have done</p>
+				<div class="col-12 flex-row port-content">
+					<ul class="col-12 flex-row port-list">
+						<li class="col-5 port-card">
+							<img src="assets/images/port/1.webp" alt="" />
 							<div class="card-content">
 								<div class="card-overlay">
 									<h4>Apa</h4>
@@ -142,8 +187,8 @@
 								</div>
 							</div>
 						</li>
-						<li class="port-card">
-							<img src="assets/images/port/2.webp" alt="">
+						<li class="col-5 port-card">
+							<img src="assets/images/port/2.webp" alt="" />
 							<div class="card-content">
 								<div class="card-overlay">
 									<h4>Apa</h4>
@@ -152,8 +197,8 @@
 								</div>
 							</div>
 						</li>
-						<li class="port-card">
-							<img src="assets/images/port/3.webp" alt="">
+						<li class="col-5 port-card">
+							<img src="assets/images/port/3.webp" alt="" />
 							<div class="card-content">
 								<div class="card-overlay">
 									<h4>Apa</h4>
@@ -162,8 +207,8 @@
 								</div>
 							</div>
 						</li>
-						<li class="port-card">
-							<img src="assets/images/port/4.webp" alt="">
+						<li class="col-5 port-card">
+							<img src="assets/images/port/4.webp" alt="" />
 							<div class="card-content">
 								<div class="card-overlay">
 									<h4>Apa</h4>
@@ -172,8 +217,8 @@
 								</div>
 							</div>
 						</li>
-						<li class="port-card">
-							<img src="assets/images/port/5.webp" alt="">
+						<li class="col-5 port-card">
+							<img src="assets/images/port/5.webp" alt="" />
 							<div class="card-content">
 								<div class="card-overlay">
 									<h4>Apa</h4>
@@ -182,8 +227,8 @@
 								</div>
 							</div>
 						</li>
-						<li class="port-card">
-							<img src="assets/images/port/6.webp" alt="">
+						<li class="col-5 port-card">
+							<img src="assets/images/port/6.webp" alt="" />
 							<div class="card-content">
 								<div class="card-overlay">
 									<h4>Apa</h4>
@@ -199,29 +244,20 @@
 
 		<!-- Exp Section -->
 		<section class="sc-exp" id="exp">
-			<div class="exp-container">
-				<h1 class="exp-title">My Experience</h1>
-				<p class="exp-subtitle">for improve me</p>
-				<div class="exp-content">
-					<ul class="exp-list">
-						<!-- <li class="exp-item">
-							<div class="ie-header">
-								<h1>Exp Title</h1>
+			<div class="flex-row exp-container">
+				<h1 class="col-12 exp-title">My Experience</h1>
+				<p class="col-12 exp-subtitle">for improve me</p>
+				<div class="col-12 flex-row exp-content">
+					<ul class="col-12 flex-row exp-list">
+						<li class="col-12 row-col exp-item">
+							<div class="col-12 ie-header">
+								<h4>Exp Title</h4>
 							</div>
-							<div class="ie-content">
-								<h3>Exp Job</h3>
+							<div class="col-12 ie-content">
+								<h5>Exp Job</h5>
 								<p>Exp desc</p>
 							</div>
 						</li>
-						<li class="exp-item">
-							<div class="ie-header">
-								<h1>Exp Title</h1>
-							</div>
-							<div class="ie-content">
-								<h3>Exp Job</h3>
-								<p>Exp desc</p>
-							</div>
-						</li> -->
 					</ul>
 				</div>
 			</div>
@@ -229,71 +265,76 @@
 
 		<!-- Contact Section-->
 		<section class="sc-contact" id="contact">
-			<div class="contact-container">
-				<div class="alert-submit">
-					<div class="submit-success">
+			<div class="flex-row col-12 contact-container">
+				<div class="col-12 flex-row alert-submit">
+					<div class="col-12 submit-success">
 						<i class='bx bx-message-square-check'>
 							<span>Success send message</span>
 						</i>
 					</div>
-					<div class="submit-fail">
+					<div class="col-12 submit-fail">
 						<i class='bx bx-message-square-x'>
 							<span>Fail when sending message</span>
 						</i>
 					</div>
 				</div>
-				<div class="contact-card">
-					<h3 class="contact-title">Contact Me</h3>
-					<h1 class="contact-subtitle">send me message</h1>
-					<div class="c-wrapper">
-						<form class="c-form" name="submit-message-google">
-							<div class="input-container">
+				<div class="col-12 row-col contact-card">
+					<h3 class="col-12 contact-title">Contact Me</h3>
+					<h1 class="col-12 contact-subtitle">send me message</h1>
+					<div class="col-12 flex-row c-wrapper">
+						<form class="col-5 flex-row c-form" name="submit-message-google">
+							<div class="col-12 input-container">
 								<input type="text" class="cf-input" id="name" name="name" placeholder="" type="text"
 									autocomplete="false" required>
 								<label for="name">Name</label>
 							</div>
-							<div class="input-container">
+							<div class="col-12 input-container">
 								<input type="text" class="cf-input" id="email" placeholder="" name="email" type="email"
 									autocomplete="false" required>
 								<label for="email">Email</label>
 							</div>
-							<div class="input-container">
+							<div class="col-12 input-container">
 								<textarea class="cf-input" name="message" id="message" placeholder="" type="text"
 									autocomplete="false" required></textarea>
 								<label for="message">Message</label>
 							</div>
-							<div class="input-container">
-
-								<button type="submit" class="cf-btn" id="btn-submit">Submit</button>
+							<div class="col-12 input-container">
+								<button type="submit" class="cf-btn" id="btn-submit">
+									<span class="sbmt">
+										Submit
+									</span>
+								</button>
 							</div>
-							<div class="input-container">
+							<div class="col-12 input-container">
 								<button class="cf-btn-loading" disabled id="btn-loading">
-									<span class="loader"></span>
+									<span class="load">
+									</span>
 									Loading
 								</button>
 							</div>
 						</form>
 
-						<ul class="c-list">
-							<li class="c-item">
-								<div class="c-item-icon"><i class='bx bxs-map-pin'></i></div>
-								<div>
+						<ul class="col-5 flex-row c-list">
+							<li class="col-12 flex-row c-item">
+								<div class="col-1 c-item-icon"><i class='bx bxs-map-pin'></i></div>
+								<div class="col-11">
 									<h3 class="c-item-title">Address</h3>
-									<a href="" class="c-item-link"> Pacitan</a>
+									<a href="#location" class="c-item-link"> Pacitan</a>
 								</div>
 							</li>
-							<li class="c-item">
-								<div class="c-item-icon"><i class="bx bxl-gmail"></i></div>
+							<li class="col-12 flex-row c-item">
+								<div class=" col-1 c-item-icon"><i class="bx bxl-gmail"></i></div>
 								<div>
-									<h3 class="c-item-title">Mail</h3>
-									<a href="" class="c-item-link">rahmadhani2202@gmail.com</a>
+									<h3 class=" col-11 c-item-title">Mail</h3>
+									<a href="mailto:rahmadhani2202@gmail.com"
+										class="col-12 c-item-link">rahmadhani2202@gmail.com</a>
 								</div>
 							</li>
-							<li class="c-item">
-								<div class="c-item-icon"><i class='bx bxl-whatsapp'></i></div>
+							<li class="col-12 flex-row c-item">
+								<div class="col-1 c-item-icon"><i class='bx bxl-whatsapp'></i></div>
 								<div>
-									<h3 class="c-item-title">Phone</h3>
-									<a href="" class="c-item-link">+6282133215398</a>
+									<h3 class="col-11 c-item-title">Phone</h3>
+									<a href="wa.me/6282133215398" class="col-12  c-item-link">+6282133215398</a>
 								</div>
 							</li>
 						</ul>
@@ -306,7 +347,7 @@
 	<!-- Footer -->
 	<footer>
 		<div class="footer">
-			<i class='bx bx-copyright' style="color: var(--text-white);">
+			<i class='bx bx-copyright'>
 				Rahmadhani Yusuf 2023
 			</i>
 		</div>
@@ -317,5 +358,6 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" type="text/javascript"></script>
 	<script src="assets/js/script.js"></script>
 </body>
+
 
 </html>

@@ -1,12 +1,20 @@
 Python,90%
-Jupyter Notebook, 85%
-java, 65%
+Jupyter Notebook,85%
+java,65%
 CSS,70%
-Java Script,80%
-Adobe,60%
-Node.Js, 50%
+JavaScript,80%
+Node.Js,50%
 Flutter,40%
-SQL, 60%
-ML, 75%
-AI, 80%
+SQL,60%
 MongoDB,60%
+Tensorflow,90%
+AI / ML,80%
+Keras,80%
+Office,80%
+PHP,75%
+Editing Multimedia,70%
+C#,60%
+C++,60%
+pyTorch,50%
+Problem Solving,75%
+Public Speaking,70%

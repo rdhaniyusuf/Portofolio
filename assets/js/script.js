@@ -7,16 +7,16 @@ if (PerformanceNavigationTiming === 1) {
 
 window.onscroll = () => {
   let header = document.querySelector('.header');
-  if (window.scrollY > 100) {
+  if (window.scrollY > 20) {
     header.classList.add('sticky');
 
   } else {
     header.classList.remove('sticky');
   }
 };
-// /**
-//  * navbar toggle
-//  */
+/**
+ * navbar toggle
+ */
 
 const navToggle = document.getElementById('navToggle');
 const navbar = document.getElementById('navbar');
@@ -116,103 +116,82 @@ form.addEventListener('submit', e => {
 
 
 
-function displaySkill() {
-  fetch('../assets/txt/skill.txt')
-    .then(response => response.text())
-    .then(data => {
-      const lines = data.split('\n');
-      const skillList = document.querySelector('.skill-list');
+$(document).ready(function () {
+  $.get('./assets/txt/skill.txt', function (data) {
+    const lines = data.split('\n');
+    const skillList = $('.skill-list');
+    const fragment = document.createDocumentFragment();
 
-      // Loop through each line to extract skills and percentages.
-      lines.forEach(line => {
-        const [skill, percentage] = line.split(',');
-        const cleanedPercentage = percentage.trim('%');
-        // Create the HTML elements for each skill and its percentage.
-        const skillItem = document.createElement('i');
-        skillItem.classList.add('skill-item');
+    lines.forEach(function (line) {
+      const [skill, percentage] = line.split(',');
+      const cleanedPercentage = percentage.trim('%');
 
-        const skillWrapper = document.createElement('div');
-        skillWrapper.classList.add('skill-wrapper');
-        skillWrapper.style.width = percentage;
+      const skillItem = $('<li>').addClass('col-5 flex-row skill-item');
+      const skillWrapper = $('<div>').addClass('col-12 flex-row skill-wrapper').css('width', percentage);
 
-        const skillTitle = document.createElement('h3');
-        skillTitle.classList.add('sw-title');
-        skillTitle.textContent = skill;
+      const skillTitle = $('<h3>').addClass('sw-title').text(skill);
+      const skillsData = $('<data>').addClass('sw-data').css('left', percentage)
+        .attr('value', cleanedPercentage)
+        .text(percentage);
 
-        const skillsData = document.createElement('data');
-        skillsData.classList.add('skills-data');
-        skillsData.style.left = percentage;
-        skillsData.setAttribute('value', cleanedPercentage);
-        skillsData.textContent = percentage;
+      const skillBarBox = $('<div>').addClass('col-12 skill-bar-box');
+      const skillBar = $('<div>').addClass('skill-bar').css('width', percentage);
 
-        const skillBarBox = document.createElement('div');
-        skillBarBox.classList.add('skill-bar-box');
-
-        const skillBar = document.createElement('div');
-        skillBar.classList.add('skill-bar');
-        skillBar.style.width = percentage;
-
-        // Append the elements to the skillList.
-        skillWrapper.appendChild(skillTitle);
-        skillWrapper.appendChild(skillsData);
-        skillItem.appendChild(skillWrapper);
-        skillItem.appendChild(skillBarBox);
-        skillBarBox.appendChild(skillBar);
-        skillList.appendChild(skillItem);
-      })
-
-    })
-    .catch(error => console.error('Error reading the file:', error));
-}
-
-function showExp(item) {
-	const exp = document.querySelector('.exp-list');
-	item.data.forEach(expData => {
-		const expItem = document.createElement('li');
-		expItem.classList.add('exp-item');
-
-		const expHeader = document.createElement('div');
-		expHeader.classList.add('ie-header');
-
-    const expTitle = document.createElement('h1');
-    expTitle.textContent = expData.exp_title;
-
-		const expContent = document.createElement('div');
-		expContent.classList.add('ie-content');
-
-    const expJob =  document.createElement('h3');
-    expJob.textContent = expData.exp_job;
-
-    const expDesc =  document.createElement('p');
-		expDesc.textContent = expData.exp_desc;
-
-		expHeader.appendChild(expTitle);
-		expContent.appendChild(expJob);
-		expContent.appendChild(expDesc);
-    expItem.appendChild(expHeader);
-    expItem.appendChild(expContent)
-		exp.appendChild(expItem);
-	});
-}
-
-
-function displayExp() {
-  fetch("../assets/txt/exp.json")
-    .then(response => response.json())
-    .then(data => {
-      // Loop through the JSON data and populate the HTML elements
-      data.forEach(item => {
-        if (item.name === "exp") {
-          showExp(item);
-        }
-      });
-    })
-    .catch(error => {
-      console.error("Error fetching JSON:", error);
+      skillWrapper.append(skillTitle, skillsData);
+      skillItem.append(skillWrapper, skillBarBox);
+      skillBarBox.append(skillBar);
+      fragment.appendChild(skillItem[0]);
     });
 
-}
+    skillList[0].appendChild(fragment);
+  }).fail(function (error) {
+    console.error('Error reading the file:', error);
+  });
+});
 
-displaySkill();
+$(document).ready(function () {
+  $.getJSON('./assets/txt/exp.json', function (data) {
+    const expList = $('.exp-list');
 
-displayExp();
+    data.forEach(function (item) {
+      if (item.name === "exp") {
+        item.data.forEach(function (expData) {
+          const expItem = $('<li>').addClass('col-12 row-col exp-item');
+          const expHeader = $('<div>').addClass('col-12 ie-header');
+          const expTitle = $('<h4>').text(expData.exp_title);
+
+          const expContent = $('<div>').addClass('col-12 ie-content');
+          const expJob = $('<h5>').text(expData.exp_job);
+          const expDesc = $('<p>').text(expData.exp_desc);
+
+          expHeader.append(expTitle);
+          expContent.append(expJob, expDesc);
+          expItem.append(expHeader, expContent);
+          expList.append(expItem);
+        });
+      }
+    });
+  }).fail(function (error) {
+    console.error('Error fetching JSON:', error);
+  });
+});
+
+
+   function toggleSkillContent(expand) {
+    var skillContent = document.querySelector('.skill-list');
+    var buttonExpand = document.querySelector('.expand-btn');
+    var buttonCollapse = document.querySelector('.collapse-btn');
+
+    if (expand) {
+      skillContent.style.maxHeight = 'none';
+      skillContent.style.paddingBottom = "5%";
+      buttonExpand.style.display = 'none';
+      buttonCollapse.style.display = 'flex';
+
+    } else {
+      skillContent.style.maxHeight = '35vh'; // Set the desired collapsed height
+      buttonExpand.style.display = 'flex';
+      buttonCollapse.style.display = 'none';
+      skillContent.style.paddingBottom = "0";
+    }
+  }

@@ -1,0 +1,23 @@
+@media screen and (max-width:576px) {
+
+	.home-container,
+	.about-container,
+	.skill-container,
+	.port-container,
+	.exp-container,
+	.contact-container {
+		padding: 0% 5% 0%;
+	}
+
+	.port-content,
+	.exp-content {
+		padding: 0;
+	}
+
+	.skill-content {
+
+		& .skill-list {
+			padding: 0;
+		}
+	}
+}
