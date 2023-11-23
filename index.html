@@ -11,21 +11,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer">
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
+		integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<link rel="stylesheet" href="assets/css/blur-main.css" />
-	<!-- <link rel="stylesheet" href="assets/css/new.css" /> -->
-
-	<!-- responsive -->
-	<!-- <link rel="stylesheet" href="assets/css/responsive/navbar.css">
-	 <link rel="stylesheet" href="assets/css/responsive/home.css">
-	 <link rel="stylesheet" href="assets/css/responsive/about.css">
-	 <link rel="stylesheet" href="assets/css/responsive/skill.css">
-	 <link rel="stylesheet" href="assets/css/responsive/port.css">
-	 <link rel="stylesheet" href="assets/css/responsive/exp.css">
-	 <link rel="stylesheet" href="assets/css/responsive/contact.css"> -->
-
-	<link rel="stylesheet" href="dump/style.css">
+	<!-- <link rel="stylesheet" href="dump/style.css"> -->
+	<link rel="stylesheet" href="assets/css/style.min.css">
 
 </head>
 
@@ -97,7 +89,6 @@
 		<!-- About Section -->
 		<section class="sc-about" id="about">
 			<div class="flex-row about-container">
-				<!-- <div class="ac-row"> -->
 				<div class="col-5 img-left">
 					<img src="assets/images/ab-pic.webp" alt="" />
 				</div>
@@ -121,7 +112,6 @@
 						</ul>
 					</div>
 				</div>
-				<!-- </div> -->
 			</div>
 		</section>
 
@@ -133,38 +123,18 @@
 				<p class="col-12 skill-desc">this is desc about my skill</p>
 				<div class="col-12 row-col skill-content">
 					<ul class="col-12 row-col skill-list">
-						<li class="col-5 flex-row skill-item">
-							<div class="col-12 flex-row skill-wrapper" style="width: 90%;">
-								<h3 class="sw-title">Python</h3>
-								<data class="sw-data" value="90%" style="left: 90%;">90%
-								</data>
-							</div>
-							<div class="col-12 skill-bar-box">
-								<div class="skill-bar" style="width: 90%;"></div>
-							</div>
-						</li>
-						<li class="col-5 row-col skill-item">
-							<div class="col-12 flex-row skill-wrapper" style="width: 90%;">
-								<h3 class="sw-title">Python</h3><data class="sw-data" value="90%" style="left: 90%;">90%
-								</data>
-							</div>
-							<div class="col-12 skill-bar-box">
-								<div class="skill-bar" style="width: 90%;"></div>
-							</div>
-						</li>
+					
 					</ul>
-					<div class="col-12 expand-button-skill">
-						<button class="collapse-btn" onclick="toggleSkillContent(false)">
-							<i class='bx bxs-down-arrow'></i>
-							collapse me
-							<i class='bx bxs-up-arrow'></i>
-						</button>
-						<button class="expand-btn" onclick="toggleSkillContent(true)">
-							<i class='bx bxs-up-arrow'></i>
-							expand me
-							<i class='bx bxs-down-arrow'></i>
-						</button>
-					</div>
+				</div>
+				<div class="col-12 expand-button-skill">
+					<button class="collapse-btn" onclick="toggleSkillContent(false)">
+						collapse me
+						<i class='bx bxs-up-arrow'></i>
+					</button>
+					<button class="expand-btn" onclick="toggleSkillContent(true)">
+						expand me
+						<i class='bx bxs-down-arrow'></i>
+					</button>
 				</div>
 			</div>
 		</section>
@@ -249,15 +219,7 @@
 				<p class="col-12 exp-subtitle">for improve me</p>
 				<div class="col-12 flex-row exp-content">
 					<ul class="col-12 flex-row exp-list">
-						<li class="col-12 row-col exp-item">
-							<div class="col-12 ie-header">
-								<h4>Exp Title</h4>
-							</div>
-							<div class="col-12 ie-content">
-								<h5>Exp Job</h5>
-								<p>Exp desc</p>
-							</div>
-						</li>
+				
 					</ul>
 				</div>
 			</div>
@@ -318,23 +280,23 @@
 							<li class="col-12 flex-row c-item">
 								<div class="col-1 c-item-icon"><i class='bx bxs-map-pin'></i></div>
 								<div class="col-11">
-									<h3 class="c-item-title">Address</h3>
-									<a href="#location" class="c-item-link"> Pacitan</a>
+									<h3 class="col-12 c-item-title">Address</h3>
+									<a href="#location" class="col-12 c-item-link"> Pacitan</a>
 								</div>
 							</li>
 							<li class="col-12 flex-row c-item">
 								<div class=" col-1 c-item-icon"><i class="bx bxl-gmail"></i></div>
-								<div>
-									<h3 class=" col-11 c-item-title">Mail</h3>
+								<div class="col-11">
+									<h3 class="col-12 c-item-title">Mail</h3>
 									<a href="mailto:rahmadhani2202@gmail.com"
 										class="col-12 c-item-link">rahmadhani2202@gmail.com</a>
 								</div>
 							</li>
 							<li class="col-12 flex-row c-item">
 								<div class="col-1 c-item-icon"><i class='bx bxl-whatsapp'></i></div>
-								<div>
-									<h3 class="col-11 c-item-title">Phone</h3>
-									<a href="wa.me/6282133215398" class="col-12  c-item-link">+6282133215398</a>
+								<div class="col-11">
+									<h3 class="col-12 c-item-title">Phone</h3>
+									<a href="https://wa.me/6282133215398" class="col-12  c-item-link">+6282133215398</a>
 								</div>
 							</li>
 						</ul>
@@ -356,6 +318,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
 		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"
+		integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="assets/js/script.js"></script>
 </body>
 
