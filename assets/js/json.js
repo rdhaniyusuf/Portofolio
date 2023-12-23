@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 	// Ambil data JSON
-	fetchData("./assets/text/file.json")
+	fetchData("assets/text/file.json")
 		.then(data => {
 			data.forEach(e => {
 				if (e["name"] == "exp") {
