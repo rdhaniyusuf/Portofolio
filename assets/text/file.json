@@ -92,7 +92,7 @@
 					"CSS"
 				],
 				"project-link": "https://github.com/rdhaniyusuf/portofolio",
-				"project-img" : "/assets/images/project/portofolio.png"
+				"project-img" : "assets/images/project/portofolio.png"
 			},
 			{
 				"project-year": "2023-12-12 06:44:04",
@@ -104,7 +104,7 @@
 					"CSS"
 				],
 				"project-link": "https://github.com/rdhaniyusuf/raport-tk",
-				"project-img" : "/assets/images/project/raport-tk.png"
+				"project-img" : "assets/images/project/raport-tk.png"
 			},
 			{
 				"project-year": "2023-06-19 22:38:51",
@@ -115,7 +115,7 @@
 					"Python"
 				],
 				"project-link": "https://github.com/rdhaniyusuf/Skripsi",
-				"project-img" : "/assets/images/project/work-1.png"
+				"project-img" : "assets/images/project/work-1.png"
 			},
 			{
 				"project-year": "2023-11-23 08:47:46",
