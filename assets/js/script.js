@@ -1,89 +1,88 @@
-if (PerformanceNavigationTiming === 1) {
-  // Page is refreshed, remove the sticky class
-  let header = document.querySelector('.header');
 
-  header.classList.remove('sticky');
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll('.nav-item');
+  const sections = document.querySelectorAll('section');
 
-window.onscroll = () => {
-  let header = document.querySelector('.header');
-  if (window.scrollY > 20) {
-    header.classList.add('sticky');
+  function highlightNavLink() {
+    const scrollPosition = window.scrollY;
 
-  } else {
-    header.classList.remove('sticky');
-  }
-};
-/**
- * navbar toggle
- */
+    sections.forEach((section, index) => {
+      const sectionTop = section.offsetTop - section.style.scrollMarginTop;
+      const sectionBottom = sectionTop + section.offsetHeight + section.style.marginBottom;
 
-const navToggle = document.getElementById('navToggle');
-const navbar = document.getElementById('navbar');
+      // Adjusting the condition to check if the top of the section is within the view
+      const isSectionPartiallyVisible = (scrollPosition >= sectionTop - 6 * parseFloat(getComputedStyle(document.documentElement).fontSize) && scrollPosition < sectionBottom);
 
-const blurMain = document.querySelector('main')
-
-// Function to toggle the blur effect on the main content
-function toggleBlur() {
-  blurMain.classList.toggle('blured');
-}
-
-function hideMenu() {
-  navbar.classList.remove('active');
-  blurMain.classList.remove('blured');
-}
-
-
-navToggle.addEventListener('click', function () {
-  navbar.classList.toggle('active');
-  toggleBlur()
-});
-
-
-const sections = document.querySelectorAll('section');
-const navbarItems = document.querySelectorAll('.nav-navbar .navbar-item');
-
-navbarItems.forEach(item => {
-  item.addEventListener('click', hideMenu);
-});
-
-window.addEventListener('scroll', function () {
-  let currentSection = null;
-
-  sections.forEach(sections => {
-
-    const sectionTop = sections.offsetTop - 90;
-    const sectionBottom = sectionTop + sections.clientHeight;
-
-    if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
-      currentSection = sections;
-    }
-  });
-
-  navbarItems.forEach(item => {
-    item.classList.remove('active');
-  });
-
-  if (currentSection) {
-    const correspondingNavItem = document.querySelector(`a[href="#${currentSection.id}"]`);
-    if (correspondingNavItem) {
-      correspondingNavItem.parentElement.classList.add('active');
-    }
+      if (isSectionPartiallyVisible) {
+        navLinks.forEach((navLink) => {
+          navLink.classList.remove('active');
+        });
+        navLinks[index].classList.add('active');
+      }
+    });
   }
 
-  hideMenu();
+  window.addEventListener('scroll', highlightNavLink);
+
+
+
+  // Handle navigation link clicks to scroll smoothly to the target section
+  navLinks.forEach((navLink, index) => {
+    navLink.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      // Get the target section ID from the href attribute
+      const targetSectionId = this.querySelector('a').getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetSectionId);
+
+      // Scroll smoothly to the target section
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+
+      // Manually trigger the scroll event to update the active navigation link
+      setTimeout(() => {
+        highlightNavLink();
+      }, 800); // Adjust the timeout based on your smooth scroll duration
+    });
+  });
 });
 
+
+// Attach the scroll event listener
+
+function handleHover(card) {
+  document.querySelectorAll('[class$="-card"]').forEach(function (element) {
+    if (element == card) {
+      card.style.opacity = 1;
+    }
+  });
+}
+
+function resetOpacity() {
+  document.querySelectorAll('[class$="-card"]').forEach(function (element) {
+    element.style.opacity = 0.5;
+    element.style.transition = ".25s ease-out all";
+  });
+}
+
+// dark theme
+var checkbox = document.getElementById("input-theme");
+
+checkbox.addEventListener("change", function () {
+  var isChecked = checkbox.checked;
+  var htmlElement = document.querySelector("html");
+
+  htmlElement.setAttribute('d-theme', isChecked ? 'dark' : "light")
+
+})
 
 // form submit 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbz1vij2gv6CNJoF8_lnphm7PReue3oqNgfwGIzmW0ItULnhG85rfIORg_pZY5pS2KiDOg/exec';
 const form = document.forms['submit-message-google'];
+const submitButton = document.querySelector('.btn-submit');
+const loadingButton = document.querySelector('.btn-loading');
 
-const submitButton = document.getElementById('btn-submit');
-const loadingButton = document.getElementById('btn-loading');
-
-let submitSucces = document.querySelector('.submit-success');
-let submitFail = document.querySelector('.submit-fail')
+let submitSucces = document.querySelector('.alert-success');
+let submitFail = document.querySelector('.alert-fail')
 
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -93,105 +92,24 @@ form.addEventListener('submit', e => {
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(
       response => {
+        submitSucces.style.display = "flex";
         console.log('Success!', response);
-        submitButton.style.display = "block";
+        submitButton.style.display = "flex";
         loadingButton.style.display = "none";
-        submitSucces.classList.add('show');
         setTimeout(() => {
-          submitSucces.classList.remove('show');
+        submitSucces.style.display = "none";
+          
         }, 3000);
         form.reset();
       })
     .catch(
       error => {
+        submitFail.style.display ="flex";
         console.error('Error!', error.message)
-        submitButton.style.display = "block";
+        submitButton.style.display = "flex";
         loadingButton.style.display = "none";
-        submitFail.classList.add('show');
         setTimeout(() => {
-          submitFail.classList.remove('show');
+            submitFail.style.display = "none"
         }, 3000);
       })
 });
-
-
-
-$(document).ready(function () {
-  $.get('./assets/txt/skill.txt', function (data) {
-    const lines = data.split('\n');
-    const skillList = $('.skill-list');
-    const fragment = document.createDocumentFragment();
-
-    lines.forEach(function (line) {
-      const [skill, percentage] = line.split(',');
-      const cleanedPercentage = percentage.trim('%');
-
-      const skillItem = $('<li>').addClass('col-5 flex-row skill-item');
-      const skillWrapper = $('<div>').addClass('col-12 flex-row skill-wrapper').css('width', percentage);
-
-      const skillTitle = $('<h3>').addClass('sw-title').text(skill);
-      const skillsData = $('<data>').addClass('sw-data').css('left', percentage)
-        .attr('value', cleanedPercentage)
-        .text(percentage);
-
-      const skillBarBox = $('<div>').addClass('col-12 skill-bar-box');
-      const skillBar = $('<div>').addClass('skill-bar').css('width', percentage);
-
-      skillWrapper.append(skillTitle, skillsData);
-      skillItem.append(skillWrapper, skillBarBox);
-      skillBarBox.append(skillBar);
-      fragment.appendChild(skillItem[0]);
-    });
-
-    skillList[0].appendChild(fragment);
-  }).fail(function (error) {
-    console.error('Error reading the file:', error);
-  });
-});
-
-$(document).ready(function () {
-  $.getJSON('./assets/txt/exp.json', function (data) {
-    const expList = $('.exp-list');
-
-    data.forEach(function (item) {
-      if (item.name === "exp") {
-        item.data.forEach(function (expData) {
-          const expItem = $('<li>').addClass('col-12 row-col exp-item');
-          const expHeader = $('<div>').addClass('col-12 ie-header');
-          const expTitle = $('<h4>').text(expData.exp_title);
-
-          const expContent = $('<div>').addClass('col-12 ie-content');
-          const expJob = $('<h5>').text(expData.exp_job);
-          const expDesc = $('<p>').text(expData.exp_desc);
-
-          expHeader.append(expTitle);
-          expContent.append(expJob, expDesc);
-          expItem.append(expHeader, expContent);
-          expList.append(expItem);
-        });
-      }
-    });
-  }).fail(function (error) {
-    console.error('Error fetching JSON:', error);
-  });
-});
-
-
-   function toggleSkillContent(expand) {
-    var skillContent = document.querySelector('.skill-list');
-    var buttonExpand = document.querySelector('.expand-btn');
-    var buttonCollapse = document.querySelector('.collapse-btn');
-
-    if (expand) {
-      skillContent.style.maxHeight = 'none';
-      skillContent.style.paddingBottom = "5%";
-      buttonExpand.style.display = 'none';
-      buttonCollapse.style.display = 'flex';
-
-    } else {
-      skillContent.style.maxHeight = '35vh'; // Set the desired collapsed height
-      buttonExpand.style.display = 'flex';
-      buttonCollapse.style.display = 'none';
-      skillContent.style.paddingBottom = "0";
-    }
-  }

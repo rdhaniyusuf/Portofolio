@@ -1,328 +1,392 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" d-theme="light">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+	<meta name="description" content="1 pages Rahmadhani">
+	<title>rdhaniy_</title>
 
-	<link rel="stylesheet"
-		href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Work+Sans&display=swap'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-		crossorigin="anonymous" referrerpolicy="no-referrer">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
-		integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg=="
+	<link rel="shortcut icon" href="assets/images/ico/registered-solid.svg" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-	<link rel="stylesheet" href="assets/css/blur-main.css" />
-	<!-- <link rel="stylesheet" href="dump/style.css"> -->
-	<link rel="stylesheet" href="assets/css/style.min.css">
-
+	<link rel="stylesheet" href="/assets/css/custom.css">
+	<link rel="stylesheet" href="/assets/css/res.css">
 </head>
 
 <body>
-	<!-- Header -->
-	<header class="header">
-		<div class="header-container">
-			<div class="nav-logo">
-				<p>rdhaniy_</p>
-			</div>
-			<div class="nav-toggle" id="navToggle"><i class="fa-solid fa-bars-staggered"></i></div>
-			<nav class="nav-navbar" id="navbar">
-				<ul class="navbar-list">
-					<li class="navbar-item"><a href="#home">Home</a></li>
-					<li class="navbar-item"><a href="#about">About</a></li>
-					<li class="navbar-item"><a href="#skill">Skill</a></li>
-					<li class="navbar-item"><a href="#portfolio">Portfolio</a></li>
-					<li class="navbar-item"><a href="#exp">Experience</a></li>
-					<li class="navbar-item"><a href="#contact">Contact</a></li>
+	<div class="container-app">
+		<div class="app">
+			<header class="app-header">
+				<div class="header-content">
+					<div class="header-desc">
+						<h1>Rahmadhani Yusuf</h1>
+						<h3>Experience Back-End Developer and Machine Learning</h3>
+						<p>I build amazing, accessible digital experiences for the web.</p>
+					</div>
+					<nav class="header-navbar">
+						<ul class="nav-list">
+							<li class="nav-item active">
+								<a href="#about-section" class="nav-link">
+									<span class="link-line"></span>
+									<span class="link-text">
+										About
+									</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#portfolio-section" class="nav-link">
+									<span class="link-line"></span>
+									<span class="link-text">Portfolio</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#experience-section" class="nav-link">
+									<span class="link-line"></span>
+									<span class="link-text">Experience</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#contact-section" class="nav-link">
+									<span class="link-line"></span>
+									<span class="link-text">Contact</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<ul class="header-list">
+					<li class="list-item">
+						<a href="">
+							<i class='bx bxl-github'></i>
+						</a>
+					</li>
+					<li class="list-item">
+						<a href="">
+							<i class='bx bxl-linkedin-square'></i>
+						</a>
+					</li>
+					<li class="list-item">
+						<a href="">
+							<i class='bx bxl-gmail'></i>
+						</a>
+					</li>
 				</ul>
-			</nav>
-		</div>
-	</header>
+			</header>
 
-	<!-- main -->
-	<main>
-		<!--Home Section -->
-		<section class="sc-home" id="home">
-			<div class="flex-row home-container">
-				<div class="col-5 hc-left">
-					<div class="left-title">
-						<h1>Hi am <span>Rahmadhani Yusuf</span></h1>
-						<p>Nothing last forever</p>
-					</div>
-					<div class="left-social-media">
-						<a href="https://www.linkedin.com/in/rdhaniyusuf2304"><i class="fa-brands fa-linkedin"></i></a>
-						<a href="https://github.com/rdhaniyusuf"><i class="fa-brands fa-square-github"></i></a>
-						<a href="mailto:rahmadhani2202@gmail.com"><i class='bx bxl-gmail'></i></a>
-					</div>
-					<div class="left-button">
-						<a href="#about"><i class="fa-solid fa-circle-info"></i>About Me</a>
-						<a href="#download-cv"><i class="fa-solid fa-cloud-arrow-down"></i>Download CV</a>
-					</div>
-				</div>
-				<div class="col-5 hc-right">
-					<div class="right-img">
-						<img src="assets/images/ab-img-1.webp" alt="" />
-					</div>
-					<div class="right-elm">
-						<div class="elm-img">
-							<div class="elm-1">
-								<i class="fa-brands fa-python"></i>
-								<p>Python Dev</p>
-							</div>
-							<div class="elm-2">
-								<i class="fa-brands fa-android"></i>
-								<p>Android Dev</p>
-							</div>
-							<div class="elm-3">
-								<i class="fa-solid fa-code"></i>
-								<p>And more</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- About Section -->
-		<section class="sc-about" id="about">
-			<div class="flex-row about-container">
-				<div class="col-5 img-left">
-					<img src="assets/images/ab-pic.webp" alt="" />
-				</div>
-				<div class="col-5 row-right">
-					<div class="row-col col-12 right-about">
-						<h1>About me</h1>
-						<p>I am a developer. I studied various programming languages. I am more interested in the
+			<main class="app-main">
+				<section id="about-section">
+					<h3>About</h3>
+					<div class="about-content">
+						<p>
+							I am a developer. I studied various programming languages. I am more
+							interested in the
 							Python
 							programming language, because in my final project I am working on automatic detection of
 							facial expressions using the backpropagation method. Python is the programming language
 							that
-							I use in building the AI.</p>
+							I use in building the AI.
+						</p>
+						<p>Currently, I am active in reviewing several programming languages ​that
+							I have learned in
+							lectures, and also learning new programming languages. The PHP programming that I am
+							studying and currently studying is the Laravel Framework
+						</p>
+						<p>When I'm not in front of the computer, I usually help my family with their work, play
+							musical instruments like the guitar, go for walks with family or friends and go running or
+							football.
+						</p>
 					</div>
-					<div class="row-col col-12 right-skill">
-						<ul class="flex-row col-12 skill-list-ab">
-							<li><i class='bx bxl-python'></i></li>
-							<li><i class='bx bxs-brain'></i></li>
-							<li><i class='bx bxl-dev-to'></i></li>
-							<li><i class="fa-brands fa-android"></i></li>
-							<li><i class='bx bxl-adobe'></i></li>
+				</section>
+
+				<section id="portfolio-section">
+					<h3>Portfolio</h3>
+					<div class="portfolio-content">
+						<ul class="portfolio-list">
+							<!-- <li class="portfolio-item">
+								<img src="assets/images/port/2.webp" alt="" class="portfolio-img">
+								<div class="portfolio-desc">
+									<a href="">
+										Title
+									</a>
+									<p>Desc</p>
+								</div>
+							</li>
+							<li class="portfolio-item">
+								<img src="assets/images/port/2.webp" alt="" class="portfolio-img">
+								<div class="portfolio-desc">
+									<a href="">
+										Title
+									</a>
+									<p>Desc</p>
+								</div>
+							</li>
+							<li class="portfolio-item">
+								<img src="assets/images/port/2.webp" alt="" class="portfolio-img">
+								<div class="portfolio-desc">
+									<a href="">
+										Title
+									</a>
+									<p>Desc</p>
+								</div>
+							</li>
+							<li class="portfolio-item">
+								<img src="assets/images/port/2.webp" alt="" class="portfolio-img">
+								<div class="portfolio-desc">
+									<a href="">
+										Title
+									</a>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod unde
+										perspiciatis nesciunt consectetur commodi eos ab, dignissimos a voluptas iure.
+										Tempore aliquam et dolorem molestiae id facere repellendus vero.</p>
+								</div>
+							</li> -->
 						</ul>
+
+						<a href="archive/" class="portfolio-link">
+							<span>
+								View Project Archive
+							</span>
+							<i class='bx bx-right-arrow-alt'></i>
+						</a>
 					</div>
-				</div>
-			</div>
-		</section>
+				</section>
 
-		<!-- Skill Section -->
-		<section class="sc-skill" id="skill">
-			<div class="flex-row skill-container">
-				<h1 class="col-12 skill-title">My Skill</h1>
-				<h3 class="col-12 skill-subtitle">I Develope Skill Regulary</h3>
-				<p class="col-12 skill-desc">this is desc about my skill</p>
-				<div class="col-12 row-col skill-content">
-					<ul class="col-12 row-col skill-list">
-					
-					</ul>
-				</div>
-				<div class="col-12 expand-button-skill">
-					<button class="collapse-btn" onclick="toggleSkillContent(false)">
-						collapse me
-						<i class='bx bxs-up-arrow'></i>
-					</button>
-					<button class="expand-btn" onclick="toggleSkillContent(true)">
-						expand me
-						<i class='bx bxs-down-arrow'></i>
-					</button>
-				</div>
-			</div>
-		</section>
+				<section id="experience-section">
+					<h3>Experience</h3>
+					<div class="experience-content">
+						<ol class="experience-list">
+							<!-- <li class="experience-item">
+								<span>Year</span>
+								<div class="experience-desc">
+									<a href="">
+										Title
+									</a>
+									<p>Quis enim aute pariatur esse qui ea quis ad. Esse in id Lorem pariatur sit anim
+										minim voluptate non ad nostrud sint. Consequat aute laborum laboris officia id.
+										Adipisicing laborum tempor laboris eiusmod culpa cillum ea. Laboris consequat
+										velit veniam dolor. Sint excepteur et sint proident.</p>
+									<ul class="experience-skill-list">
+										<li class="experience-skill-item">
+											<p>Skill 1</p>
+										</li>
+										<li class="experience-skill-item">
+											<p>Skill 2</p>
+										</li>
 
-		<!-- Portfolio Section -->
-		<section class="sc-portfolio" id="portfolio">
-			<div class="flex-row portfolio-container">
-				<h1 class="col-12 port-title">Portfolio</h1>
-				<h3 class="col-12 port-subtitle">My Amazing Work</h3>
-				<p class="col-12 port-desc">This is my project that i have done</p>
-				<div class="col-12 flex-row port-content">
-					<ul class="col-12 flex-row port-list">
-						<li class="col-5 port-card">
-							<img src="assets/images/port/1.webp" alt="" />
-							<div class="card-content">
-								<div class="card-overlay">
-									<h4>Apa</h4>
-									<p>Apaaan?</p>
-									<button>See More</button>
+									</ul>
 								</div>
-							</div>
-						</li>
-						<li class="col-5 port-card">
-							<img src="assets/images/port/2.webp" alt="" />
-							<div class="card-content">
-								<div class="card-overlay">
-									<h4>Apa</h4>
-									<p>Apaaan?</p>
-									<button>See More</button>
-								</div>
-							</div>
-						</li>
-						<li class="col-5 port-card">
-							<img src="assets/images/port/3.webp" alt="" />
-							<div class="card-content">
-								<div class="card-overlay">
-									<h4>Apa</h4>
-									<p>Apaaan?</p>
-									<button>See More</button>
-								</div>
-							</div>
-						</li>
-						<li class="col-5 port-card">
-							<img src="assets/images/port/4.webp" alt="" />
-							<div class="card-content">
-								<div class="card-overlay">
-									<h4>Apa</h4>
-									<p>Apaaan?</p>
-									<button>See More</button>
-								</div>
-							</div>
-						</li>
-						<li class="col-5 port-card">
-							<img src="assets/images/port/5.webp" alt="" />
-							<div class="card-content">
-								<div class="card-overlay">
-									<h4>Apa</h4>
-									<p>Apaaan?</p>
-									<button>See More</button>
-								</div>
-							</div>
-						</li>
-						<li class="col-5 port-card">
-							<img src="assets/images/port/6.webp" alt="" />
-							<div class="card-content">
-								<div class="card-overlay">
-									<h4>Apa</h4>
-									<p>Apaaan?</p>
-									<button>See More</button>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+							</li>
+							<li class="experience-item">
+								<span>Year</span>
+								<div class="experience-desc">
+									<a href="">
+										Title
+									</a>
+									<p>Quis enim aute pariatur esse qui ea quis ad. Esse in id Lorem pariatur sit anim
+										minim voluptate non ad nostrud sint. Consequat aute laborum laboris officia id.
+										Adipisicing laborum tempor laboris eiusmod culpa cillum ea. Laboris consequat
+										velit veniam dolor. Sint excepteur et sint proident.</p>
+									<ul class="experience-skill-list">
+										<li class="experience-skill-item">
+											<p>Skill 1</p>
+										</li>
+										<li class="experience-skill-item">
+											<p>Skill 2</p>
+										</li>
 
-		<!-- Exp Section -->
-		<section class="sc-exp" id="exp">
-			<div class="flex-row exp-container">
-				<h1 class="col-12 exp-title">My Experience</h1>
-				<p class="col-12 exp-subtitle">for improve me</p>
-				<div class="col-12 flex-row exp-content">
-					<ul class="col-12 flex-row exp-list">
-				
-					</ul>
-				</div>
-			</div>
-		</section>
+									</ul>
+								</div>
+							</li>
+							<li class="experience-item">
+								<span>Year</span>
+								<div class="experience-desc">
+									<a href="">
+										Title
+									</a>
+									<p>Quis enim aute pariatur esse qui ea quis ad. Esse in id Lorem pariatur sit anim
+										minim voluptate non ad nostrud sint. Consequat aute laborum laboris officia id.
+										Adipisicing laborum tempor laboris eiusmod culpa cillum ea. Laboris consequat
+										velit veniam dolor. Sint excepteur et sint proident.</p>
+									<ul class="experience-skill-list">
+										<li class="experience-skill-item">
+											<p>Skill 1</p>
+										</li>
+										<li class="experience-skill-item">
+											<p>Skill 2</p>
+										</li>
 
-		<!-- Contact Section-->
-		<section class="sc-contact" id="contact">
-			<div class="flex-row col-12 contact-container">
-				<div class="col-12 flex-row alert-submit">
-					<div class="col-12 submit-success">
-						<i class='bx bx-message-square-check'>
-							<span>Success send message</span>
-						</i>
+									</ul>
+								</div>
+							</li>
+							<li class="experience-item">
+								<span>Year</span>
+								<div class="experience-desc">
+									<a href="">
+										Title
+									</a>
+									<p>Quis enim aute pariatur esse qui ea quis ad. Esse in id Lorem pariatur sit anim
+										minim voluptate non ad nostrud sint. Consequat aute laborum laboris officia id.
+										Adipisicing laborum tempor laboris eiusmod culpa cillum ea. Laboris consequat
+										velit veniam dolor. Sint excepteur et sint proident.</p>
+									<ul class="experience-skill-list">
+										<li class="experience-skill-item">
+											<p>Skill 1</p>
+										</li>
+										<li class="experience-skill-item">
+											<p>Skill 2</p>
+										</li>
+
+									</ul>
+								</div>
+							</li> -->
+						</ol>
+
+						<a href="" class="experience-link">
+							<span>
+								View Full Resume
+							</span>
+							<i class='bx bx-right-arrow-alt'></i>
+						</a>
 					</div>
-					<div class="col-12 submit-fail">
-						<i class='bx bx-message-square-x'>
-							<span>Fail when sending message</span>
-						</i>
-					</div>
-				</div>
-				<div class="col-12 row-col contact-card">
-					<h3 class="col-12 contact-title">Contact Me</h3>
-					<h1 class="col-12 contact-subtitle">send me message</h1>
-					<div class="col-12 flex-row c-wrapper">
-						<form class="col-5 flex-row c-form" name="submit-message-google">
-							<div class="col-12 input-container">
-								<input type="text" class="cf-input" id="name" name="name" placeholder="" type="text"
-									autocomplete="false" required>
-								<label for="name">Name</label>
+				</section>
+				<section id="contact-section">
+					<h3>Contact</h3>
+					<div class="contact-content">
+						<div class="contact-information">
+							<div class="contact-information-desc">
+								<h4>Contact Information</h4>
+								<p>
+									Let's discuss the information you provided, with my contact information or sending a
+									message on the form.
+								</p>
 							</div>
-							<div class="col-12 input-container">
-								<input type="text" class="cf-input" id="email" placeholder="" name="email" type="email"
-									autocomplete="false" required>
-								<label for="email">Email</label>
-							</div>
-							<div class="col-12 input-container">
-								<textarea class="cf-input" name="message" id="message" placeholder="" type="text"
-									autocomplete="false" required></textarea>
-								<label for="message">Message</label>
-							</div>
-							<div class="col-12 input-container">
-								<button type="submit" class="cf-btn" id="btn-submit">
-									<span class="sbmt">
-										Submit
-									</span>
-								</button>
-							</div>
-							<div class="col-12 input-container">
-								<button class="cf-btn-loading" disabled id="btn-loading">
-									<span class="load">
-									</span>
-									Loading
-								</button>
+							<ul class="contact-me-list">
+								<li class="contact-me-item">
+									<a href="">
+										<i class='bx bxl-gmail'></i>
+										<span>Gmail me</span>
+									</a>
+								</li>
+								<li class="contact-me-item">
+									<a href="">
+										<i class='bx bxl-whatsapp'></i>
+										<span>Whatsapp me</span>
+									</a>
+								</li>
+								<li class="contact-me-item">
+									<a href="">
+										<i class='bx bxs-map-pin'></i>
+										<span>coordinate</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<form action="" class="contact-form" name="submit-message-google">
+							<h4>Contact Me</h4>
+							<div class="input-wrapper">
+								<div class="input-container half">
+									<input class="input" type="text" name="name" id="name" autocomplete="false"
+										placeholder="" required>
+									<label for="name">Name</label>
+								</div>
+								<div class="input-container half">
+									<input class="input" type="email" name="email" id="email" autocomplete="false"
+										placeholder="" required>
+									<label for="email">Email</label>
+								</div>
+								<div class="input-container full">
+									<textarea class="input-textarea" type="textarea" name="message" id="message"
+										placeholder="" autocomplete="false" required></textarea>
+									<label for="message">Message</label>
+								</div>
+								<div class="input-container full">
+									<button class="btn-submit">
+										<span class="submit">
+											Submit
+										</span>
+									</button>
+								</div>
+								<div class="input-container full">
+									<a class="btn-loading" disabled>
+										<span class="loading">
+											<i class="bx bx-spin">
+												<i class="fa-solid fa-spinner"></i>
+											</i>
+											Loading
+										</span>
+									</a>
+								</div>
 							</div>
 						</form>
-
-						<ul class="col-5 flex-row c-list">
-							<li class="col-12 flex-row c-item">
-								<div class="col-1 c-item-icon"><i class='bx bxs-map-pin'></i></div>
-								<div class="col-11">
-									<h3 class="col-12 c-item-title">Address</h3>
-									<a href="#location" class="col-12 c-item-link"> Pacitan</a>
-								</div>
-							</li>
-							<li class="col-12 flex-row c-item">
-								<div class=" col-1 c-item-icon"><i class="bx bxl-gmail"></i></div>
-								<div class="col-11">
-									<h3 class="col-12 c-item-title">Mail</h3>
-									<a href="mailto:rahmadhani2202@gmail.com"
-										class="col-12 c-item-link">rahmadhani2202@gmail.com</a>
-								</div>
-							</li>
-							<li class="col-12 flex-row c-item">
-								<div class="col-1 c-item-icon"><i class='bx bxl-whatsapp'></i></div>
-								<div class="col-11">
-									<h3 class="col-12 c-item-title">Phone</h3>
-									<a href="https://wa.me/6282133215398" class="col-12  c-item-link">+6282133215398</a>
-								</div>
-							</li>
-						</ul>
 					</div>
-				</div>
-			</div>
-		</section>
-	</main>
 
-	<!-- Footer -->
-	<footer>
-		<div class="footer">
-			<i class='bx bx-copyright'>
-				Rahmadhani Yusuf 2023
-			</i>
+					<div class="contact-alert">
+						<div class="alert-success">
+							<i class='bx bx-message-square-check'>
+								<span>Success send message</span>
+							</i>
+							<i class='bx bxs-checkbox-minus' onclick="close()"></i>
+						</div>
+						<div class="alert-fail">
+							<i class='bx bx-message-square-x'>
+								<span>fail send message</span>
+								</i>
+							<i class='bx bxs-checkbox-minus' onclick="close()"></i>
+						</div>
+					</div>
+				</section>
+
+				<footer class="footer">
+					<div class="footer-desc">
+
+						Loosely designed and coded in <span style="color: #2589fb;">Visual Studio Code</span>. Built
+						with
+						<span style="color: #fdba6d;">HTML</span>, <span style="color: #78b6fd;">CSS</span>,
+						<span style="color: #ffd35a;">JavaScript</span>, and <span
+							style="color: #fc445c;">AppScript</span>,
+						deployed with <span style="color: #9f57f6;">Github Pages</span>. All text is set in the Inter
+						typeface.
+					</div>
+
+					<div class="copyright">
+						<p>
+							Rahmadhani &copy 2023
+						</p>
+					</div>
+				</footer>
+			</main>
 		</div>
-	</footer>
+	</div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" type="text/javascript"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"
-		integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<div class="container-theme">
+		<div class="theme-wrapper">
+			<input type="checkbox" name="input-theme" id="input-theme" class="input-theme">
+			<label for="input-theme" class="label-theme">
+				<span class="theme-light">
+					<i class='bx bxs-sun'></i>
+					<span class="light-content">
+						<i class='bx bx-cloud'></i>
+					</span>
+				</span>
+				<span class="theme-dark">
+					<i class='bx bxs-moon'></i>
+					<span class="dark-content">
+						<i class='bx bxs-sun'></i>
+						<!-- <i class='bx bx-cloud'></i> -->
+					</span>
+				</span>
+			</label>
+		</div>
+	</div>
 	<script src="assets/js/script.js"></script>
+	<script src="assets/js/json.js"></script>
 </body>
-
 
 </html>

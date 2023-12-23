@@ -1,0 +1,80 @@
+[
+  {
+    "project-year": "2019-12-21 09:47:28",
+    "project-name": "Amikem-Two",
+    "project-made-for": "Project untuk membuat sebuah web yang akan digunakan untuk berbagi informasi dengan orang lain dalam lingkup amikom, baik berita kehilangan, penemuan maupun yang lain.",
+    "project-made-with": [
+      "PHP",
+      "HTML"
+    ],
+    "project-link": "https://github.com/rdhaniyusuf/Amikem-Two"
+  },
+  {
+    "project-year": "2019-06-26 09:05:19",
+    "project-name": "Belajar-AJA",
+    "project-made-for": null,
+    "project-made-with": [],
+    "project-link": "https://github.com/rdhaniyusuf/Belajar-AJA"
+  },
+  {
+    "project-year": "2020-06-15 11:09:29",
+    "project-name": "FP-TechGame-Alawkon",
+    "project-made-for": null,
+    "project-made-with": [],
+    "project-link": "https://github.com/rdhaniyusuf/FP-TechGame-Alawkon"
+  },
+  {
+    "project-year": "2019-12-21 15:06:43",
+    "project-name": "Motor_Bike",
+    "project-made-for": "final project PWL motor bike",
+    "project-made-with": [
+      "PHP",
+      "Blade",
+      "Vue"
+    ],
+    "project-link": "https://github.com/rdhaniyusuf/Motor_Bike"
+  },
+  {
+    "project-year": "2023-10-23 11:45:23",
+    "project-name": "portofolio",
+    "project-made-for": "portofolio Rahmadhani Yusuf",
+    "project-made-with": [
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "project-link": "https://github.com/rdhaniyusuf/portofolio"
+  },
+  {
+    "project-year": "2023-12-12 06:44:04",
+    "project-name": "raport-tk",
+    "project-made-for": "Raport TK",
+    "project-made-with": [
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "project-link": "https://github.com/rdhaniyusuf/raport-tk"
+  },
+  {
+    "project-year": "2023-06-19 22:38:51",
+    "project-name": "Skripsi",
+    "project-made-for": "Program SKRIPSI",
+    "project-made-with": [
+      "Jupyter Notebook",
+      "Python"
+    ],
+    "project-link": "https://github.com/rdhaniyusuf/Skripsi"
+  },
+  {
+    "project-year": "2023-11-23 08:47:46",
+    "project-name": "volunteers-test",
+    "project-made-for": "daftar untuk member",
+    "project-made-with": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "project-link": "https://github.com/rdhaniyusuf/volunteers-test"
+  }
+]

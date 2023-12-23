@@ -1,0 +1,160 @@
+@media screen and (max-width: 575px) {
+	.container-app {
+		padding: 0 2% !important;
+		min-height: 100vh;
+	}
+
+	.app {
+		flex-direction: column;
+	}
+
+	.app-header {
+		position: relative;
+		width: 100%;
+		padding: 1rem 0;
+		height: 30vh;
+	}
+
+	.header-desc>h1 {
+		font-size: calc(3rem - 20%);
+	}
+
+	.header-desc>h3 {
+		font-size: calc(1.2rem - 2%);
+	}
+
+	.header-desc>p {
+		font-size: calc(1rem - 10%);
+	}
+
+	.header-navbar {
+		display: none;
+	}
+
+	.app-main {
+		padding: 2rem 0;
+		width: 100%;
+	}
+
+	section {
+		width: 100%;
+		scroll-margin-top: 2rem;
+		margin-bottom: 2rem;
+		position: relative;
+
+	}
+
+	section>h3 {
+		display: block;
+		position: sticky;
+		top: 0;
+		backdrop-filter: blur(2px);
+		height: max-content;
+		padding: 1rem 0;
+		z-index: 1;
+	}
+
+	.portfolio-list,
+	.experience-list {
+		gap: 1rem;
+	}
+
+	.portfolio-item,
+	.experience-item,
+	.contact-content {
+		flex-direction: column;
+	}
+
+	.portfolio-desc,
+	.experience-desc,
+	.contact-form {
+		gap: .2rem;
+		width: 100%;
+	}
+
+	.contact-information {
+		width: 100% !important;
+		gap: 1rem;
+	}
+
+	.contact-me-list {
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	.contact-me-item span {
+		display: none;
+	}
+
+	.contact-form {
+		gap: 1rem;
+	}
+
+	.half {
+		flex-basis: 100%;
+	}
+
+	.full {
+		flex-basis: 100%;
+	}
+
+
+	.copyright {
+		text-align: center;
+		display: block;
+		padding-top: 2rem;
+	}
+
+	.container-theme {
+		width: calc(20%);
+	}
+
+	.theme-wrapper {
+		height: 2rem;
+		width: 2rem;
+		background-color: var(--bg-color);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.theme-wrapper:hover {
+		width: 2rem;
+	}
+
+	.theme-wrapper:hover .theme-light {
+		justify-content: center;
+		transition: .25s ease-in all;
+	}
+
+	.theme-wrapper:hover .theme-dark {
+		justify-content: center;
+		transition: .25s ease-in all;
+	}
+
+
+	.theme-wrapper:hover .theme-light>.light-content {
+		display: none;
+		transition: .25s ease-in all;
+	}
+
+	.theme-wrapper:hover .theme-dark>.dark-content {
+		display: none;
+		transition: .25s ease-in all;
+	}
+
+	@media (prefers-reduced-motion:reduce) {
+	* {
+		transition: none
+	}
+}
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {}
+
+@media screen and (min-width:768px) and (max-width:991px) {}
+
+@media screen and (min-width:992px) and (max-width:1999px) {}
+
+@media screen and (min-width:1200px) and (min-width:1400px) {}
