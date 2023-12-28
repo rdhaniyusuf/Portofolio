@@ -19,8 +19,6 @@
 }
 
 [d-theme="dark"] {
-
-
 	--d-bg-color:var(--d-black);
 	--d-text-color:var(--d-white);
 	--d-accent-1:#00b0b0;
@@ -42,7 +40,6 @@
 }
 ::selection {
 	background-color:var(--d-accent-2);
-
 }
 
 html {
@@ -78,7 +75,6 @@ button {
 	max-height: 100vh;
 	width: 45%;
 	padding: 6rem 0;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -324,7 +320,6 @@ section>h3 {
 	padding: 0 1%;
 	border-radius: 5px;
 }
-
 
 
 .skill-icon {
