@@ -1,5 +1,43 @@
-
 document.addEventListener("DOMContentLoaded", function () {
+  // set theme asli
+
+  var htmlElement = document.querySelector('html');
+  var checkbox = document.getElementById("input-theme")
+
+  var savedTheme = localStorage.getItem('userTheme')
+  var defaultTheme = "auto";
+  var themeToSet = savedTheme || defaultTheme;
+
+  setTheme(themeToSet);
+
+  updateCheckBoxState(themeToSet);
+
+  checkbox.addEventListener("change", function () {
+    var isChecked = checkbox.checked;
+    var theme = isChecked ? 'dark' : 'light';
+    htmlElement.setAttribute('d-theme', theme);
+    localStorage.setItem("userTheme", theme);
+  });
+
+  function setTheme(theme) {
+    if (theme == "auto") {
+      var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      htmlElement.setAttribute('d-theme', prefersDarkMode ? 'dark' : 'light')
+
+    } else {
+      htmlElement.setAttribute('d-theme', theme)
+    }
+  }
+
+  function updateCheckBoxState(theme) {
+    if (theme == "auto") {
+      checkbox.indeterminate = true;
+    } else {
+      checkbox.checked = themeToSet === 'dark';
+    }
+  }
+
   const navLinks = document.querySelectorAll('.nav-item');
   const sections = document.querySelectorAll('section');
 
@@ -44,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 800); // Adjust the timeout based on your smooth scroll duration
     });
   });
+
 });
 
 
@@ -65,15 +104,15 @@ function resetOpacity() {
 }
 
 // dark theme
-var checkbox = document.getElementById("input-theme");
+// var checkbox = document.getElementById("input-theme");
 
-checkbox.addEventListener("change", function () {
-  var isChecked = checkbox.checked;
-  var htmlElement = document.querySelector("html");
+// checkbox.addEventListener("change", function () {
+//   var isChecked = checkbox.checked;
+//   var htmlElement = document.querySelector("html");
 
-  htmlElement.setAttribute('d-theme', isChecked ? 'dark' : "light")
+//   htmlElement.setAttribute('d-theme', isChecked ? 'dark' : "light")
 
-})
+// })
 
 // form submit 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbz1vij2gv6CNJoF8_lnphm7PReue3oqNgfwGIzmW0ItULnhG85rfIORg_pZY5pS2KiDOg/exec';
