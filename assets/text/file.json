@@ -20,7 +20,9 @@
 				"exp_job": "koding",
 				"exp_desc": "Sederhana nya game ini meruakan game indie layaknya super mario, dengan melawan setiap monster yang ada, untuk mencapai level berikutnya. Saya menjadi bagian untuk membangun sekaligus menentukan komposisi musik yang di gunakan, dengan berbasis aplikasi construct 3",
 				"exp_link": "https://github.com/rdhaniyusuf/FP-TechGame-Alawkon",
-				"exp_skill": ["Construct 3"]
+				"exp_skill": [
+					"Construct 3"
+				]
 			},
 			{
 				"exp_title": "Portal Event Amikom ",
@@ -58,7 +60,7 @@
 					"HTML"
 				],
 				"project-link": "https://github.com/rdhaniyusuf/Amikem-Two",
-				"project-img" : ""
+				"project-img": ""
 			},
 			{
 				"project-year": "2020-06-15 11:09:29",
@@ -68,7 +70,7 @@
 					"Construct 3"
 				],
 				"project-link": "https://github.com/rdhaniyusuf/FP-TechGame-Alawkon",
-				"project-img" : ""
+				"project-img": ""
 			},
 			{
 				"project-year": "2019-12-21 15:06:43",
@@ -80,7 +82,7 @@
 					"Vue"
 				],
 				"project-link": "https://github.com/rdhaniyusuf/Motor_Bike",
-				"project-img" : ""
+				"project-img": ""
 			},
 			{
 				"project-year": "2023-10-23 11:45:23",
@@ -92,7 +94,7 @@
 					"CSS"
 				],
 				"project-link": "https://github.com/rdhaniyusuf/portofolio",
-				"project-img" : "assets/images/project/portofolio.png"
+				"project-img": "assets/images/project/portofolio.webp"
 			},
 			{
 				"project-year": "2023-12-12 06:44:04",
@@ -104,7 +106,7 @@
 					"CSS"
 				],
 				"project-link": "https://github.com/rdhaniyusuf/raport-tk",
-				"project-img" : "assets/images/project/raport-tk.png"
+				"project-img": "assets/images/project/raport-tk.webp"
 			},
 			{
 				"project-year": "2023-06-19 22:38:51",
@@ -115,7 +117,7 @@
 					"Python"
 				],
 				"project-link": "https://github.com/rdhaniyusuf/Skripsi",
-				"project-img" : "assets/images/project/work-1.png"
+				"project-img": "assets/images/project/work-1.webp"
 			},
 			{
 				"project-year": "2023-11-23 08:47:46",
@@ -127,7 +129,7 @@
 					"JavaScript"
 				],
 				"project-link": "https://github.com/rdhaniyusuf/volunteers-test",
-				"project-img" : "assets/images/project/voulenter-test.png"
+				"project-img": "assets/images/project/voulenter-test.webp"
 			}
 		]
 	},
@@ -136,83 +138,187 @@
 		"data": [
 			{
 				"skill-name": "Python",
-				"skill-percentage": "90%"
+				"skill-percentage": "90%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"web",
+					"ml"
+				]
 			},
 			{
 				"skill-name": "Jupyter Notebook",
-				"skill-percentage": "85%"
+				"skill-percentage": "85%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"ml"
+				]
 			},
 			{
 				"skill-name": "java",
-				"skill-percentage": "65%"
+				"skill-percentage": "65%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"mobile"
+				]
 			},
 			{
 				"skill-name": "CSS",
-				"skill-percentage": "70%"
+				"skill-percentage": "70%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"web"
+				]
 			},
 			{
 				"skill-name": "JavaScript",
-				"skill-percentage": "80%"
+				"skill-percentage": "80%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"web"
+				]
 			},
 			{
 				"skill-name": "Node.Js",
-				"skill-percentage": "50%"
+				"skill-percentage": "50%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"web"
+				]
 			},
 			{
-				"skill-name": "Flutter",
-				"skill-percentage": "40%"
+				"skill-name": "Flutter (Native)",
+				"skill-percentage": "40%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"web",
+					"mobile"
+				]
 			},
 			{
 				"skill-name": "SQL",
-				"skill-percentage": "60%"
+				"skill-percentage": "60%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"web",
+					"mobile"
+				]
 			},
 			{
 				"skill-name": "MongoDB",
-				"skill-percentage": "60%"
+				"skill-percentage": "60%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"web",
+					"mobile"
+				]
 			},
 			{
 				"skill-name": "Tensorflow",
-				"skill-percentage": "90%"
+				"skill-percentage": "90%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"ml"
+				]
 			},
 			{
 				"skill-name": "AI / ML",
-				"skill-percentage": "80%"
+				"skill-percentage": "80%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"ml"
+				]
 			},
 			{
 				"skill-name": "Keras",
-				"skill-percentage": "80%"
+				"skill-percentage": "80%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"ml"
+				]
 			},
 			{
 				"skill-name": "Office",
-				"skill-percentage": "80%"
+				"skill-percentage": "80%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"other"
+				]
 			},
 			{
 				"skill-name": "PHP",
-				"skill-percentage": "75%"
+				"skill-percentage": "75%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"web"
+				]
 			},
 			{
 				"skill-name": "Editing Multimedia",
-				"skill-percentage": "70%"
+				"skill-percentage": "70%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"other"
+				]
 			},
 			{
 				"skill-name": "C#",
-				"skill-percentage": "60%"
+				"skill-percentage": "60%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"other"
+				]
 			},
 			{
 				"skill-name": "C++",
-				"skill-percentage": "60%"
+				"skill-percentage": "60%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"other"
+				]
 			},
 			{
 				"skill-name": "pyTorch",
-				"skill-percentage": "50%"
+				"skill-percentage": "50%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"ml"
+				]
 			},
 			{
 				"skill-name": "Problem Solving",
-				"skill-percentage": "75%"
+				"skill-percentage": "75%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"other"
+				]
 			},
 			{
 				"skill-name": "Public Speaking",
-				"skill-percentage": "70%"
+				"skill-percentage": "70%",
+				"skill-icon": "",
+				"skill-category": [
+					"all",
+					"other"
+				]
 			}
 		]
 	}

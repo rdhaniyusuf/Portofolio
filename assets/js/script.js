@@ -97,19 +97,46 @@ form.addEventListener('submit', e => {
         submitButton.style.display = "flex";
         loadingButton.style.display = "none";
         setTimeout(() => {
-        submitSucces.style.display = "none";
-          
+          submitSucces.style.display = "none";
+
         }, 3000);
         form.reset();
       })
     .catch(
       error => {
-        submitFail.style.display ="flex";
+        submitFail.style.display = "flex";
         console.error('Error!', error.message)
         submitButton.style.display = "flex";
         loadingButton.style.display = "none";
         setTimeout(() => {
-            submitFail.style.display = "none"
+          submitFail.style.display = "none";
         }, 3000);
       })
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const skillItemNav = document.querySelectorAll('.skill-nav-item');
+//   skillItemNav[0].classList.add('skill-active');
+//   changeSkills(skillItemNav[0].getAttribute('name'))
+
+//   skillItemNav.forEach((link, index) => {
+//     link.addEventListener('click', function (e) {
+//       e.preventDefault();
+
+//       const nameString = this.getAttribute('name');
+//       this.classList.add('skill-active');
+
+//       skillItemNav.forEach((otherLink, otherIndex) => {
+//         if (otherIndex != index) {
+//           otherLink.classList.remove("skill-active")
+//         }
+//       });
+//       changeSkills(nameString)
+//     });
+//   });
+// });
+
+
+// function changeSkills(nameString) {
+//   console.log(nameString)
+// }
