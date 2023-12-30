@@ -88,7 +88,7 @@ async function expShow(data) {
 			expItem.addEventListener("click", function () {
 				const linkElement = expItem.querySelector('a');
 				const targetUrl = linkElement.getAttribute("href");
-				window.location.href = targetUrl;
+				window.open(targetUrl, "_blank");
 			});
 			c.appendChild(expItem)
 		});
@@ -129,7 +129,7 @@ async function projcetShow(data) {
 
 					portfItem.addEventListener("click", function () {
 						const linkElement = portfItem.querySelector("a");
-						window.location.href = linkElement.getAttribute("href");
+						window.open(linkElement.getAttribute("href"), "_blank")
 					})
 
 					c.appendChild(portfItem);
@@ -147,22 +147,31 @@ async function projcetShow(data) {
 			item["project-made-with"], item["project-link"]
 			]
 			classListContentItem.forEach((c, i) => {
+			
 				const elementLi = document.createElement("li");
 				elementLi.classList.add(c);
-
 				if (i == 4) {
 					const linkHref = document.createElement("a")
 					linkHref.href = projectListsItem[i];
+					linkHref.target = "_blank"
 					linkHref.textContent = "Go to Link";
 					elementLi.appendChild(linkHref);
-				} else {
+				} else if(i==3){
+					Array.from(projectListsItem[i]).forEach((made,k) =>{
+						const spanMade = document.createElement('span')
+						spanMade.textContent = made + " ";
+						elementLi.appendChild(spanMade)
+					})
+				}
+				else {
 					elementLi.textContent = projectListsItem[i];
 				}
 				projectItem.appendChild(elementLi);
 			})
 			projectItem.addEventListener("click", function () {
 				const linkElement = projectItem.querySelector("a");
-				window.location.href = linkElement.getAttribute("href");
+				var href = linkElement.getAttribute("href");
+				window.open(href, "_blank")
 			})
 			archiveList.appendChild(projectItem);
 		})

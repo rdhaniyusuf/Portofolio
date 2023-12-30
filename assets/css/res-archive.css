@@ -1,0 +1,195 @@
+@media screen and (max-width: 575px) {
+
+	.container {
+		padding: 0 2% !important;
+		min-height: 100dvh;
+	}
+
+	.archive-container {
+		padding-top: 2rem;
+		width: 100%;
+	}
+
+	.archive-title {
+		width: 50%;
+	}
+
+	.archive-title>a {
+		justify-content: flex-start;
+	}
+
+	.archive-table {
+		width: 100%;
+	}
+
+	.h-year,
+	.con-year {
+		width: 20%;
+	}
+
+	.h-project,
+	.con-project {
+		width: 50%;
+	}
+
+	.h-link,
+	.con-link {
+		width: 25%;
+	}
+
+
+	.h-made-at,
+	.con-made-at,
+	.h-build-with,
+	.con-build-with {
+		display: none;
+	}
+
+	.container-theme {
+		width: calc(20%);
+		z-index: 2;
+	}
+
+	.theme-wrapper {
+		height: 2rem;
+		width: 2rem;
+		background-color: var(--bg-color);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.theme-wrapper:hover {
+		width: 2rem;
+	}
+
+	.theme-wrapper:hover .theme-light {
+		justify-content: center;
+		transition: .25s ease-in all;
+	}
+
+	.theme-wrapper:hover .theme-dark {
+		justify-content: center;
+		transition: .25s ease-in all;
+	}
+
+
+	.theme-wrapper:hover .theme-light>.light-content {
+		display: none;
+		transition: .25s ease-in all;
+	}
+
+	.theme-wrapper:hover .theme-dark>.dark-content {
+		display: none;
+		transition: .25s ease-in all;
+	}
+
+	@media (prefers-reduced-motion:reduce) {
+		* {
+			transition: none
+		}
+	}
+
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+	.container {
+		padding: 0 2% !important;
+		min-height: 100dvh;
+	}
+
+	.archive-container {
+		padding: 0 2% !important;
+	}
+
+	.archive-title {
+		width: 50%;
+	}
+
+	.archive-title>a {
+		justify-content: flex-start;
+	}
+
+	.archive-table {
+		width: 100%;
+	}
+
+	.h-year,
+	.con-year {
+		width: 15%;
+	}
+
+	.h-project,
+	.con-project {
+		width: 30%;
+	}
+
+	.h-link,
+	.con-link {
+		width: 20%;
+	}
+
+
+	.h-made-at,
+	.con-made-at{
+		display: none;
+	}
+
+	.h-build-with,
+	.con-build-with {
+		width: 25%;
+		display: flex;
+		flex-wrap:wrap;
+		gap: 1rem;
+	}
+
+	.con-build-with{
+	
+	}
+	.container-theme {
+		width: calc(20%);
+		z-index: 2;
+	}
+
+	.theme-wrapper {
+		height: 2rem;
+		width: 2rem;
+		background-color: var(--bg-color);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.theme-wrapper:hover {
+		width: 2rem;
+	}
+
+	.theme-wrapper:hover .theme-light {
+		justify-content: center;
+		transition: .25s ease-in all;
+	}
+
+	.theme-wrapper:hover .theme-dark {
+		justify-content: center;
+		transition: .25s ease-in all;
+	}
+
+
+	.theme-wrapper:hover .theme-light>.light-content {
+		display: none;
+		transition: .25s ease-in all;
+	}
+
+	.theme-wrapper:hover .theme-dark>.dark-content {
+		display: none;
+		transition: .25s ease-in all;
+	}
+
+	@media (prefers-reduced-motion:reduce) {
+		* {
+			transition: none
+		}
+	}
+}

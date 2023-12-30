@@ -1,42 +1,40 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // set theme asli
-
+  // // set theme asli
   var htmlElement = document.querySelector('html');
-  var checkbox = document.getElementById("input-theme")
-
-  var savedTheme = localStorage.getItem('userTheme')
+  var themeInHTML = htmlElement.getAttribute('d-theme');
   var defaultTheme = "auto";
-  var themeToSet = savedTheme || defaultTheme;
+  var localThemeUser = localStorage.getItem("userTheme");
 
-  setTheme(themeToSet);
+  var checkboxTheme = document.getElementById("input-theme");
+  let setToTheme = "";
 
-  updateCheckBoxState(themeToSet);
-
-  checkbox.addEventListener("change", function () {
-    var isChecked = checkbox.checked;
-    var theme = isChecked ? 'dark' : 'light';
-    htmlElement.setAttribute('d-theme', theme);
-    localStorage.setItem("userTheme", theme);
-  });
-
-  function setTheme(theme) {
-    if (theme == "auto") {
-      var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-      htmlElement.setAttribute('d-theme', prefersDarkMode ? 'dark' : 'light')
-
-    } else {
-      htmlElement.setAttribute('d-theme', theme)
-    }
+  if (themeInHTML == defaultTheme) {
+    let prefersDarkMode = window.matchMedia('(prefers-color-scheme : dark)').matches;
+    setToTheme = prefersDarkMode ? "dark" : "light";
+  } else {
+    setToTheme = themeInHTML
   }
 
-  function updateCheckBoxState(theme) {
-    if (theme == "auto") {
-      checkbox.indeterminate = true;
-    } else {
-      checkbox.checked = themeToSet === 'dark';
-    }
+  if (localThemeUser != null){
+      htmlElement.setAttribute('d-theme', localThemeUser);
+      setToTheme = localThemeUser
+  } else {
+      htmlElement.setAttribute('d-theme', setToTheme)
   }
+
+  
+  if (setToTheme == 'light'){
+    checkboxTheme.checked = false;
+  } else {
+    checkboxTheme.checked = true;
+  }
+
+  checkboxTheme.addEventListener("change", function(){
+    var isChecked = checkboxTheme.checked
+    setToTheme = isChecked ? "dark" : "light";
+    htmlElement.setAttribute('d-theme', setToTheme)
+    localStorage.setItem("userTheme", setToTheme)
+  })
 
   const navLinks = document.querySelectorAll('.nav-item');
   const sections = document.querySelectorAll('section');
